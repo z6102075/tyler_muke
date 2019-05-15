@@ -25,16 +25,22 @@
         var centerX=oParent.offsetWidth/2;
         var centerY=oParent.offsetHeight/2;
 
- 
+        
+        var circleNum = 9;
+        var angleNum = 390/circleNum;
+        var centerR= 150;
+        var otherData = [];
+        for(var i=0;i<circleNum;i++){
+            var y=Math.sin(i*40*Math.PI/180)*centerR +centerY;
+            var x=Math.cos(i*40*Math.PI/180)*centerR +centerX;
+            otherData.push({x:x,y:y,text:i});
+        }
+
+       
 
         var data={
             centerNode :{text:'科鲁兹'},
-            otherNode:[
-                {x:100,y:100,text:'易车网'},
-                {x:200,y:50,text:'易车网'},
-                {x:600,y:250,text:'易车网'},
-                {x:400,y:350,text:'易车网'},
-            ]
+            otherNode: otherData
         };
 
         function createTag(tag,objAttr){
@@ -52,7 +58,7 @@
     }
     
     var oG=createTag('g',{'style':'cursor:pointer'});
-    var oCircle=createTag('circle',{'cx':centerX,'cy':centerY,'r':'60','fill':'white','stroke':'red',
+    var oCircle=createTag('circle',{'cx':centerX,'cy':centerY,'r':'40','fill':'white','stroke':'red',
     'stroke-width':'1'});
     var oText=createTag('text',{'x':centerX,'y':centerY+8,'font-size':'20','text-anchor':'middle'});
 
@@ -67,7 +73,7 @@
 }
 addTag();
 function addOtherTag(otherAttr,oSvg){
-    var oG = createTag('g',{'style':'cursor:pointer'});
+    var oG = createTag('g',{'style':'cursor:pointer','class':'lineStyle'});
     var oLine1 =createTag('line',{'x1':otherAttr.x,'y1':otherAttr.y,'x2':centerX,'y2':centerY,'stroke':'#ccc'});
     var oLine2 =createTag('line',{'x1':otherAttr.x,'y1':otherAttr.y,'x2':centerX,'y2':centerY,
     'stroke':'transparent','stroke-width':'10'});
@@ -84,9 +90,9 @@ function addOtherTag(otherAttr,oSvg){
     oG.appendChild(oText);
 
     oSvg.appendChild(oG);
-    var oG = createTag('g',{'style':'cursor:pointer'});
+    var oG = createTag('g',{'style':'cursor:pointer','class':'circleStyle'});
 
-    var oCircle=createTag('circle',{'cx':otherAttr.x,'cy':otherAttr.y,'r':'40','fill':'white','stroke':'red',
+    var oCircle=createTag('circle',{'cx':otherAttr.x,'cy':otherAttr.y,'r':'30','fill':'white','stroke':'red',
     'stroke-width':'1'});
     var oText=createTag('text',{'x':otherAttr.x,'y':otherAttr.y+8,'font-size':'20','text-anchor':'middle'});
 
@@ -97,6 +103,63 @@ function addOtherTag(otherAttr,oSvg){
     oSvg.appendChild(oG);
 
 }
+// 下面设置封装的class内容
+bindTag();
+function bindTag(){
+    var aLine= document.getElementsByClassName('lineStyle');//获取线
+    var aCircle = document.getElementsByClassName('circleStyle');//获取圆
+    // 下面是给圆添加
+    for(var i=0;i<aCircle.length;i++){
+        aCircle[i].onmouseover = function(){
+            startMove(this.getElementsByTagName('circle')[0],30,40);
+            var prevLine = this.previousElementSibling;
+            prevLine.getElementsByTagName('line')[0].setAttribute('stroke','blue');
+            prevLine.getElementsByTagName('rect')[0].setAttribute('fill','red');
+        }
+        aCircle[i].onmouseleave = function(){
+            startMove(this.getElementsByTagName('circle')[0],40,30); 
+            var prevLine = this.previousElementSibling;
+            prevLine.getElementsByTagName('line')[0].setAttribute('stroke','#ccc');
+            prevLine.getElementsByTagName('rect')[0].setAttribute('fill','#999');
+        }
+    }
+      //下面是给线添加
+      for(var i=0;i<aLine.length;i++){
+        aLine[i].onmouseenter = function(){
+            this.getElementsByTagName('line')[0].setAttribute('stroke','blue');
+            this.getElementsByTagName('rect')[0].setAttribute('fill','red');
+            var prevCircle= this.nextElementSibling;
+            startMove(prevCircle.getElementsByTagName('circle')[0],30,40); 
+        }
+        aLine[i].onmouseleave = function(){
+            this.getElementsByTagName('line')[0].setAttribute('stroke','#ccc');
+            this.getElementsByTagName('rect')[0].setAttribute('fill','#999');
+            var prevCircle= this.nextElementSibling;
+            startMove(prevCircle.getElementsByTagName('circle')[0],40,30);
+        }
+    }
+}
+    
+function startMove(obj,r1,r2){
+    var nowR = r1;
+    var overR = r2;
+    obj.speed =0;
+    clearInterval(obj.timer);
+    obj.timer =setInterval(function(){
+        obj.speed += (overR -nowR)/6;
+        obj.speed *= 0.9;
+        if(Math.abs(overR-nowR)<=1&&Math.abs(obj.speed)<=1){
+            clearInterval(obj.timer);
+            obj.setAttribute('r',overR);
+
+        }
+        else{
+            nowR +=obj.speed;
+            obj.setAttribute('r',nowR);
+        }
+    },30) 
+}
+
     }
 
 
