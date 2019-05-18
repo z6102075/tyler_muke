@@ -14,13 +14,14 @@
  }
 
 </style>
-
+<script src="cundang/jquery-3.3.1.js"></script><!--这里必须要应用Jquery文件-->
 <script>
     window.onload = function(){
         var svgNS ='http://www.w3.org/2000/svg';
         var oParent =document.getElementById('div1');
         var oSvg = document.getElementById('svg1');
-
+        var aPath = oSvg.getElementsByTagName('path');
+        
         function createTag(tag,objAttr){
         var oTag =document.createElementNS(svgNS,tag);
         for(var attr in objAttr){
@@ -30,34 +31,49 @@
     }
     var arrNum = [23.61,17.10,16.05,15.40,11.72,14.95];//但是通过电脑计算 这里的数值可能到时候会有一个缺口，因为电脑会进行小数化
     var angle = 360;
-    var sumNum=0;
+    
     var outerR = 120;
     var innerR = 70;
     var centerX=200;
     var centerY=200;
-    var outerXY=[{x:320,y:200}];
-    var innerXY=[{x:270,y:200}];
+
     var arrColor=['#FF6699','#6666CC','#99CCFF','#9999FF','#9966FF','#66CCFF']
-    for(var i=0; i<arrNum.length;i++){
+    for(var i=0;i<arrNum.length;i++){
+            var oPath=createTag('path',{fill:arrColor[i]});
+            oSvg.appendChild(oPath);
+        }
 
-        var agNum=arrNum[i]/100*angle;
-        sumNum+=agNum;
-        if(i ==arrNum.length-1){
-            sumNum =360;
-        } //这里通过if语句让那个缺口堵上  当i等于了最后一下，让最终累加的角度值等于360，绕一圈，就和起点吻合了
+    $('#div1').animate({
+        move:'auto'
+    },{
+        duration:700,
+        easing:'swing',
+        step:function(a,b){
+        //    b.pos // 0 到 1 
+        var sumNum=0;
+        var outerXY=[{x:320,y:200}];
+        var innerXY=[{x:270,y:200}];
+        for(var i=0; i<arrNum.length;i++){
+
+var agNum=arrNum[i]/100*angle;
+sumNum+=agNum;
+if(i ==arrNum.length-1){
+    sumNum =360;
+} //这里通过if语句让那个缺口堵上  当i等于了最后一下，让最终累加的角度值等于360，绕一圈，就和起点吻合了
+ 
+
+var outerX=Math.cos(sumNum*b.pos*Math.PI/180)*outerR+centerX;
+var outerY=Math.sin(sumNum*b.pos*Math.PI/180)*outerR+centerY;
+outerXY.push({x:outerX,y:outerY});
+
+var innerX=Math.cos(sumNum *b.pos* Math.PI/180)*innerR+centerX;
+var innerY=Math.sin(sumNum*b.pos * Math.PI/180)*innerR+centerY;
+innerXY.push({x:innerX,y:innerY});
 
 
-        var outerX=Math.cos(sumNum*Math.PI/180)*outerR+centerX;
-        var outerY=Math.sin(sumNum*Math.PI/180)*outerR+centerY;
-        outerXY.push({x:outerX,y:outerY});
-        
-        var innerX=Math.cos(sumNum * Math.PI/180)*innerR+centerX;
-        var innerY=Math.sin(sumNum * Math.PI/180)*innerR+centerY;
-        innerXY.push({x:innerX,y:innerY});
-        
-       
-    }
-    for(var i=0;i<outerXY.length;i++){
+        } 
+
+        for(var i=0;i<outerXY.length;i++){
             if(i ==outerXY.length-1){
                 break;
             }
@@ -68,6 +84,9 @@
             outerXY[i+1].y+'L'+innerXY[i+1].x+' '+innerXY[i+1].y+'A'+innerR+' '+innerR+' 0 0 0 '+innerXY[i].x+' '+innerXY[i].y});
             oSvg.appendChild(oPath);
         }
+        }
+    });
+    
 
     }
 
@@ -83,7 +102,7 @@
     <!-- <path d="M50 100 H200 V200" stroke="black" stroke-width="5" fill="none"></path>-->
      <!-- <path d="M100 100A100 100 0 0 0 200 200" stroke="black" stroke-width="5" fill="none"></path> -->
      <!-- <path d="M150 150A100 100 0 0 1 250 150L225 175 A50 50 0 0 0 175 175Z" stroke="black" stroke-width="5" fill="none"></path> -->
-
+ 
 
     </svg>
 </div>

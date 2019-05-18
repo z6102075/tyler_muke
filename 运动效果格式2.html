@@ -66,6 +66,13 @@
             var oPath=createTag('path',{fill:arrColor[i],d:'M'+outerXY[i].x+' '+
             outerXY[i].y+'A'+outerR+' '+outerR+' 0 0 1'+outerXY[i+1].x+' '+
             outerXY[i+1].y+'L'+innerXY[i+1].x+' '+innerXY[i+1].y+'A'+innerR+' '+innerR+' 0 0 0 '+innerXY[i].x+' '+innerXY[i].y});
+            
+            var oAn =createTag('animate',{attributeName:'d',dur:'0.5',from:'M'+outerXY[i].x+' '+
+            outerXY[i].y+'A'+outerR+' '+outerR+' 0 0 1'+outerXY[i].x+' '+
+            outerXY[i].y+'L'+innerXY[i+1].x+' '+innerXY[i].y+'A'+innerR+' '+innerR+' 0 0 0 '+innerXY[i].x+' '+innerXY[i].y,to:'M'+outerXY[i].x+' '+
+            outerXY[i].y+'A'+outerR+' '+outerR+' 0 0 1'+outerXY[i+1].x+' '+
+            outerXY[i+1].y+'L'+innerXY[i+1].x+' '+innerXY[i+1].y+'A'+innerR+' '+innerR+' 0 0 0 '+innerXY[i].x+' '+innerXY[i].y})
+            oPath.appendChild(oAn);
             oSvg.appendChild(oPath);
         }
 
