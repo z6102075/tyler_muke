@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Atoms / Icon/illustrated/ Camera_OFF Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-487.000000, -1417.000000)">
+            <g id="Atoms-/-Icons-Copy" transform="translate(77.000000, 1395.000000)">
+                <g id="Atoms-/-icons-/illustrated/-Devices_OFF" transform="translate(390.000000, 2.000000)">
+                    <rect id="Rectangle-5" x="0" y="0" width="100" height="100"></rect>
+                    <path d="M72.472,20 C76.623,20 80,23.377 80,27.528 L80,72.472 C80,76.623 76.623,80 72.471,80 L27.528,80 C23.377,80 20,76.623 20,72.471 L20,27.528 C20,23.377 23.377,20 27.528,20 L72.472,20 Z M33,40 C36.8659932,40 40,36.8659932 40,33 C40,29.1340068 36.8659932,26 33,26 C29.1340068,26 26,29.1340068 26,33 C26,36.8659932 29.1340068,40 33,40 Z M44,39 C45.1045695,39 46,38.1045695 46,37 C46,35.8954305 45.1045695,35 44,35 C42.8954305,35 42,35.8954305 42,37 C42,38.1045695 42.8954305,39 44,39 Z M51,39 C52.1045695,39 53,38.1045695 53,37 C53,35.8954305 52.1045695,35 51,35 C49.8954305,35 49,35.8954305 49,37 C49,38.1045695 49.8954305,39 51,39 Z" id="Combined-Shape" fill="#44556B" fill-rule="evenodd"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

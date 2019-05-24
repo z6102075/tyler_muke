@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Icons White / Notifications Icon Copy 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.850279,19.3942968 L16.1929383,14.7024992 C16.0180824,14.5266147 16.0005968,14.2555879 16.135853,14.0478178 C18.0453832,11.11898 17.6000148,7.09112094 14.7827762,4.68530826 C12.0719941,2.37103784 7.94590711,2.45023731 5.31946732,4.86119281 C2.30474438,7.62854596 2.2286306,12.3388577 5.09215454,15.2044388 C7.53396698,17.6483083 11.3134277,17.9450492 14.0890094,16.1090614 C14.2972937,15.9712337 14.5703776,15.9892336 14.7462622,16.1661467 L19.3933172,20.8481729 C19.5944016,21.0502859 19.9204566,21.0508001 20.1220552,20.8492015 L20.8492504,20.121492 C21.0498205,19.9209219 21.0503348,19.5958955 20.850279,19.3942968 L20.850279,19.3942968 Z M6.54654493,13.7485055 C4.55935806,11.7597758 4.55935806,8.52391147 6.54654493,6.53518175 C8.5337318,4.54645204 11.7670247,4.54593775 13.7542116,6.53518175 C15.7413985,8.52391147 15.7413985,11.7597758 13.7542116,13.7485055 C11.7670247,15.7372352 8.5337318,15.7372352 6.54654493,13.7485055 L6.54654493,13.7485055 Z" id="path-1"></path>
+    </defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-388.000000, -565.000000)">
+            <g id="Group-6" transform="translate(77.000000, 562.000000)">
+                <g id="Atoms-/-icons-/-Glyph-//-Search-Icon" transform="translate(308.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="Atoms-/-Colors-/-Gray_Medium" mask="url(#mask-2)" fill="#657D95" fill-rule="evenodd">
+                        <rect id="Rectangle-Copy-3" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Battery Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-1064.000000, -610.000000)">
+            <g id="Atoms-/-icons-/-Battery_charging-Copy" transform="translate(1059.000000, 609.000000)">
+                <path d="M11.7525,3 L10.5,3 L10.5,1.5 L7.5,1.5 L7.5,3 L6.2475,3 C5.7,3 5.25,3.45 5.25,3.9975 L5.25,10.875 L6.75,10.875 L9.75,5.25 L9.75,9.375 L11.25,9.375 L10.4475,10.875 L12.75,10.875 L12.75,3.9975 C12.75,3.45 12.3,3 11.7525,3 L11.7525,3 Z" id="Shape" fill="#20293C"></path>
+                <path d="M8.25,15 L8.25,10.875 L5.25,10.875 L5.25,15.5025 C5.25,16.05 5.7,16.5 6.2475,16.5 L11.745,16.5 C12.3,16.5 12.75,16.05 12.75,15.5025 L12.75,10.875 L10.4475,10.875 L8.25,15 L8.25,15 Z" id="Shape" fill="#05C985"></path>
+            </g>
+        </g>
+    </g>
+</svg>

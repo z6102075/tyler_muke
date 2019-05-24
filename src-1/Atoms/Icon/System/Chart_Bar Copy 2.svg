@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Atoms / Icon/System/ Chart_Bar Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,4.06189375 L11,13 L19.9381062,13 C19.4459761,16.9463407 16.0795982,20 12,20 C7.581722,20 4,16.418278 4,12 C4,7.92040178 7.05365933,4.55402392 10.9999436,4.06190079 Z M13,2.06189375 C13.3275942,2.02104333 13.6613397,2 14,2 C18.418278,2 22,5.581722 22,10 C22,10.3386603 21.9789567,10.6724058 21.9381062,11 L13,11 L13,2.06189375 Z" id="path-1"></path>
+    </defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-697.000000, -608.000000)">
+            <g id="Group-6" transform="translate(77.000000, 562.000000)">
+                <g id="Group-5">
+                    <g id="Atoms-/-icons-/System/-Chart_Pie" transform="translate(616.000000, 44.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#44556B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <g id="Atoms-/-Colors-/-Gray_Medium" mask="url(#mask-2)" fill="#657D95" fill-rule="evenodd">
+                            <rect id="Rectangle-Copy-3" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

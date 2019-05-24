@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.nav{
+width: 100%;
+margin: 0;
+}
+.nav ul{/*这里必须设置内边距和外边距，因为浏览器会给ul设定默认值，会把导航栏挤歪*/
+padding: 0;
+margin: 0;
+list-style: none;
+}
+.nav li{/*本来ul是竖直排列的，对所有li元素进行float:left他就会自动全部靠左*/
+float: left;
+position :relative;
+}
+.nav ul li a,.nav ul li a:hover {/*对所有项目a标签设置统一样式*/
+display: block;
+text-align: center;
+text-decoration: none;
+width: 184px;
+color: black;/*文字颜色 */
+border: 1px solid #fff;/*边框大小和颜色 */
+border-width: 1px 1px 0 0;/*四个边框的宽度 ,注意，左右边框没有像素哦，仔细看导航栏左右有缝隙*/
+background: #CCCCCC;/*背景颜色 */
+height：50px;
+line-height: 50px;/*这里将height和line-height设置为一样的高度文字就会水平竖直居中 */
+font-size: 17px;
+}
+.nav ul li:hover a {/*这是一个css伪类，将鼠标移上去的时候字体和背景都会变色，移开又会变回来 */
+color: #fff;
+background: #CCCCFF;
+}
+.nav ul li ul {/*这是实现下拉菜单隐藏的关键*/
+display: none;
+}
+.nav ul li:hover ul {/*这里就是弹出的下拉菜单了*/
+display: block;
+position: absolute;
+top: 51px;
+left: 0;
+width: 185px;
+}
+.nav ul li:hover ul li a {/*这里当然是定义下拉菜单里的a标签了*/
+display: block;
+background: #CCFFFF;
+color: #000;
+}
+.nav ul li:hover ul li a:hover {/*下拉菜单a标签的伪类设置*/
+background: #dfc184;
+color: #000;
+ 

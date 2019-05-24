@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Notification</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.5,22 C13.6,22 14.5,21.1 14.5,20 L10.5,20 C10.5,21.1 11.4,22 12.5,22 L12.5,22 Z M19,16 L19,10.5 C19,7.43 16.87,4.86 14,4.18 L14,3.5 C14,2.67 13.33,2 12.5,2 C11.67,2 11,2.67 11,3.5 L11,4.18 C8.13,4.86 6,7.43 6,10.5 L6,16 L4,18 L4,19 L21,19 L21,18 L19,16 L19,16 Z" id="path-1"></path>
+    </defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-905.000000, -608.000000)">
+            <g id="Group-7" transform="translate(901.000000, 606.000000)">
+                <g id="Atoms-/-icons-/-Notification">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#44556B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="Atoms-/-Colors-/-Gray_Medium" mask="url(#mask-2)" fill="#657D95" fill-rule="evenodd">
+                        <rect id="Rectangle-Copy-3" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

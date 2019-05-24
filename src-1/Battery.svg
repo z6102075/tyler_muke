@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Battery</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-1016.000000, -610.000000)" fill="#05C985">
+            <g id="Atoms-/-icons-/-Battery_charging" transform="translate(1011.000000, 609.000000)">
+                <path d="M11.7525,3 C12.3,3 12.75,3.45 12.75,3.9975 L12.75,15.5025 C12.75,16.05 12.3,16.5 11.745,16.5 L6.2475,16.5 C5.7,16.5 5.25,16.05 5.25,15.495 L5.25,3.9975 C5.25,3.45 5.7,3 6.2475,3 L7.5,3 L7.5,1.5 L10.5,1.5 L10.5,3 L11.7525,3 Z M11.05,8.625 L9.55,8.625 L9.55,4.5 L6.75,9.75 L8.05,9.75 L8.05,13.875 L11.05,8.625 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

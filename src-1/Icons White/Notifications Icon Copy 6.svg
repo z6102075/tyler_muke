@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Icons White / Notifications Icon Copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.31,16.851 C17.076,16.131 16.401,15.6 15.6,15.6 L14.7,15.6 L14.7,12.9 C14.7,12.4029437 14.2970563,12 13.8,12 L8.4,12 L8.4,10.2 L10.2,10.2 C10.6970563,10.2 11.1,9.79705627 11.1,9.3 L11.1,7.5 L12.9,7.5 C13.8941125,7.5 14.7,6.69411255 14.7,5.7 L14.7,5.331 C17.337,6.393 19.2,8.976 19.2,12 C19.2,13.872 18.48,15.573 17.31,16.851 L17.31,16.851 Z M11.1,19.137 C7.545,18.696 4.8,15.672 4.8,12 C4.8,11.442 4.872,10.902 4.989,10.389 L9.3,14.7 L9.3,15.6 C9.3,16.5941125 10.1058875,17.4 11.1,17.4 L11.1,19.137 Z M12,3 C7.02943725,3 3,7.02943725 3,12 C3,14.3869484 3.94821156,16.6761336 5.63603897,18.363961 C7.32386638,20.0517884 9.61305159,21 12,21 C14.3869484,21 16.6761336,20.0517884 18.363961,18.363961 C20.0517884,16.6761336 21,14.3869484 21,12 C21,9.61305159 20.0517884,7.32386638 18.363961,5.63603897 C16.6761336,3.94821156 14.3869484,3 12,3 L12,3 Z" id="path-1"></path>
+    </defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-344.000000, -565.000000)">
+            <g id="Group-6" transform="translate(77.000000, 562.000000)">
+                <g id="Atoms-/-icons-/-Glyph-//-Globe" transform="translate(264.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="Atoms-/-Colors-/-Gray_Medium" mask="url(#mask-2)" fill="#657D95" fill-rule="evenodd">
+                        <rect id="Rectangle-Copy-3" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

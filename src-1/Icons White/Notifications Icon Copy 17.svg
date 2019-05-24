@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Icons White / Notifications Icon Copy 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20,15.2 L20,5.6 C20,4.72 19.28,4 18.4,4 L8.8,4 C7.92,4 7.2,4.72 7.2,5.6 L7.2,15.2 C7.2,16.08 7.92,16.8 8.8,16.8 L18.4,16.8 C19.28,16.8 20,16.08 20,15.2 L20,15.2 Z M11.2,12 L12.824,14.168 L15.2,11.2 L18.4,15.2 L8.8,15.2 L11.2,12 L11.2,12 Z M4,7.2 L4,18.4 C4,19.28 4.72,20 5.6,20 L16.8,20 L16.8,18.4 L5.6,18.4 L5.6,7.2 L4,7.2 L4,7.2 Z" id="path-1"></path>
+    </defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Elements" transform="translate(-125.000000, -610.000000)">
+            <g id="Group-6" transform="translate(77.000000, 562.000000)">
+                <g id="Group-5">
+                    <g id="Atoms-/-icons-/-Glyph-//-image" transform="translate(44.000000, 44.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#70889E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <g id="Atoms-/-Colors-/-Gray_Medium" mask="url(#mask-2)" fill="#657D95" fill-rule="evenodd">
+                            <rect id="Rectangle-Copy-3" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
