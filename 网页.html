@@ -7,14 +7,14 @@
 body{
   
     margin: 0px;
-   
-  
+   padding: 0px;
+   overflow-x: hidden;
 }
  .dingbu{
      display: block;
      background-color: rgb(34,46,66);
      height: 70px;
-     width: 77%;
+     width: 1440px;
      margin:0 auto;
  
  }
@@ -29,7 +29,8 @@ body{
     width: 247px;
      float: left;
      background-color:rgb(34,46,66);
-     border-right:1px solid rgb(39, 39, 39)
+     border-right:1px solid rgb(39, 39, 39);
+      
  }
  .dingbu1{
     display: inline-block;
@@ -37,7 +38,8 @@ body{
     width: 65px;
     background-color:rgb(34,46,66);
     text-align:center;
-    border-right:1px solid rgb(39, 39, 39)
+    border-right:1px solid rgb(39, 39, 39);
+    cursor: pointer
  }
  .dingbu2{
     top: 25px;
@@ -85,54 +87,145 @@ body{
     
  }
  
- a{text-decoration: none;}
-    .nav{
-        
-        width: 320px;
+.zhongbu{
+    display: block;
+    height: 690px;
+    background-color: rgb(34,46,66);
+    width: 1440px;
+    top: 0px;
+    border-top:1px solid rgb(39, 39, 39);
+    position: relative;
+    margin: 0px auto;
+  
+}
+
+.touxiang{
+    display: inline-block;
+    float: left;
+    left: 20px;
+    top:22px;
+    position: relative;
+}
+.touxiang img{
+    height: 115px;
+    width:180px;
+}
+.Username{
+ 
+    display: inline-block;
+    float: right;
+    left: 40px;
+    top:0px;
+    position: relative;
+}
+.myhome{
+    display: inline-block;
+    float: left;
+    left: -600px;
+    top:130px;
+    position: relative;
+ 
+}
+.xinxi{
+    display: inline-block;
+    float: left;
+    left: -180px;
+    top:40px;
+    font-size: 14px;
+    color: rgb(172, 173, 173);
+    position: relative;
+}
+.sss{
+    display: inline-block;
+    top:230px;
+    float: left;
+    left: -540px;
+    position: relative;
+    height: 400px;
+    width: 200px;
+   
+}
+.sss li{
+    float: left;
+        left: 0px;
+        top: 10px;
+        width: 200px;
         height: 50px;
-        float: right;
-        right: -480px;
-        top:-5px;
-        position: relative;
-    }
-    .nav li{
-        float: left;
-        width: 100px;
-        height: 50px;
-        margin-right: 10px;
-        background-color:rgb(34,46,66);
+       position: relative;
+        background-color:rgb(73, 216, 204);
         line-height: 50px;
         text-align: center;
-        list-style:none
-    }
-    .nav .mr0{
-        margin-right: 0;
-    }
-    .nav li a{
-        display: block;
-        width: 100%;
-        height: 100%;
-        color: rgb(202, 202, 202);
-        font-size: 16px;
-    }
-    .nav > li:nth-child(1){
-        position: relative;
-    }
-    .nav .list{
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        top: 0px;
-        left: -40px;
-        height:0;
-        transition: 1s;
-    }
-    .nav > li:nth-child(1):hover .list{
-        height: 200px;
-        }
-</style>
+        list-style:none;
+        text-decoration:none; display: inline-block;
+        border-left:8px rgb(31, 140, 250) solid;
+        border-top-right-radius:10px; 
+       
+        border-bottom-right-radius:10px;
+        background:rgb(34,46,66);
+}
+.sss li:hover{
+    background-color: rgb(32, 41, 60);
+}
+.sss a{
+    color: rgb(172, 173, 173);
+}
+.OV{
+    display: inline-block;
+    float: left;
+     left: 250px;
+    top:20px;
+    font-size: 26px;
+    color:rgb(255, 255, 255);
+    margin: 0px auto;
+    position: absolute;
+}
+.OV p{
+    margin: 0px auto;
+}
+.shiping{
+    display: inline-block;
+    float: left;
+     left: 250px;
+    top:70px;
+    width: 700px;
+    height: 420px;
+    font-size: 17px;
+    color:rgb(255, 255, 255);
+    margin: 0px auto;
+    background-color:rgb(47,59,82);
+    position: absolute;       
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.shiping p{
+    display: inline-block;
+}
+.sandian{
+    top:16px;
+    float: right;
+    right: 5px;
+    position: relative;
+}
 
- 
+.sp{
+    display: inline-block;
+    float: left;
+     left: 15px;
+    top:50px;
+    position: absolute;
+    width:678px;
+    height:363px;
+    
+}
+
+
+
+
+
+</style> 
+ <link rel="stylesheet" type="text/css" href="caidan.css" >
 <script>
     
 </script>
@@ -143,7 +236,7 @@ body{
     <a class="logo" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img src="src-1/1.png"  alt="logo" /></a>
     
    <div class="dingbu1">
-       <a href=""> <img class="dingbu2" src="src-1/Icons White/Notifications Icon Copy 24.svg"style="width:20px;height:20px;"/>
+        <a href="">  <img class="dingbu2" src="src-1/Icons White/Notifications Icon Copy 24.svg"style="width:20px;height:20px;"/>
        </a>
    </div>
    <a href=""> <img class="dingbu3" src="src-1/Icons White/Notifications Icon Copy 26.svg"style="width:20px;height:20px;"/>
@@ -155,20 +248,53 @@ body{
    </a>
    <a href=""> <img class="dingbu6" src="src-1/Icons White/Notifications Icon.svg"style="width:20px;height:20px;"/>
    </a>
+   <div class="Username">
    <ul class="nav">
-        <li><a href="">Username ▼</a>
+        <li><a  id="yiji" href="">Username ▼</a>
             <ul class="list">
-                <li><a href="">Personal Center</a></li>
-                <li><a href="">Help</a></li>
-                <li><a href="">Settings</a></li>
-                <li><a href="">Sign out</a></li>
+                <li><a href="" class="out" >Personal Center</a></li>
+                <li><a href=""class="out" >Help</a></li>
+                <li><a href=""class="out"  >Settings</a></li>
+                <li><a href="" class="out" >Sign out</a></li>
             </ul>
         </li>
 
     </ul>
-
 </div>
-	
+</div>
+<div class="zhongbu">
+        <a class="touxiang" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img src="src-1/3.png"  alt="logo" /></a>
+
+<div class="myhome">
+        <ul class="nav">
+        <li><a  id="yiji" href="">My Home ▼</a>
+            <ul class="list">
+                <li><a href="" class="out" >My Album</a></li>
+                <li><a href=""class="out" >My friend</a></li>
+                <li><a href=""class="out"  >Record</a></li>
+                <li><a href="" class="out" >Sign out</a></li>
+            </ul>
+        </li>
+        <p class="xinxi">9898 Trent Bypass Suite 541</p>
+    </ul>
+</div>
+<div class="sss">
+    <li style="background-color: rgb(32, 41, 60);" ><a href=""  >Overview</a></li>
+    <li><a href=""  >Devices</a></li>
+    <li><a href=""  >Analytics</a></li>
+    <li><a href="" >Rules</a></li>
+    <li><a href=""   >Gallery</a></li>
+    <li><a href=""   >History</a></li>
+    <li><a href=""  >Settings</a></li>
+</div>
+ <div class="OV"><p>Overview</p></div> 
+<div class="shiping">
+    <p>  &nbsp;&nbsp;&nbsp;Camera</p>
+    <a href=""> <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        <embed  class="sp" href="https://www.videvo.net" />
+    </div>
+
+</div>	
 </body>
 </html>
  
