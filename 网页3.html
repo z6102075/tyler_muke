@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale">
+<title>                </title> 
+
+<style>
+ 
+body{
+  
+    margin: 0px;
+   padding: 0px;
+   
+   width: 95%;
+}
+ .dingbu{
+    display: block;height:auto;
+     background-color: rgb(34,46,66);
+     
+     width: 81.5%;
+     margin:0 auto;
+ }
+ .dingbu img{
+    height: 70px;
+    width: 250px;
+ 
+ }
+ .logo{
+    display: inline-block;
+    height: 70px;
+    width: 247px;
+     float: left;
+     background-color:rgb(34,46,66);
+     border-right:1px solid rgb(39, 39, 39);
+      
+ }
+ .dingbu1{
+    display: inline-block;
+    height: 70px;
+    width: 65px;
+    background-color:rgb(34,46,66);
+    text-align:center;
+    border-right:1px solid rgb(39, 39, 39);
+    cursor: pointer
+ }
+ .dingbu2{
+    top: 25px;
+    position: relative;
+    
+ }
+ .dingbu3{
+    display: inline-block;
+    top: 25px;
+    float: right;
+    right: 500px;
+    position: relative;
+    
+ }
+.tongji{
+    display: inline-block;
+    top: 25px;
+    float: right;
+    right: 270px;
+    
+    position: relative;
+ }
+ .dingbu4{
+    display: inline-block;
+    top: 25px;
+    float: right;
+    right: 0px;
+    position: relative;
+    
+ }
+ .dingbu5{
+    display: inline-block;
+    top: 25px;
+    float: right;
+    right: -60px;
+    position: relative;
+    
+ }
+ .dingbu6{
+    display: inline-block;
+    top: 25px;
+    float: right;
+    right: -120px;
+    position: relative;
+    
+ }
+ 
+.Username{
+ 
+    display: inline-block;
+    float: right;
+    right: -50px;
+    top:0px;
+    position: relative;
+}
+.dbzb{
+    display: inline-block
+    
+}
+/* 下面是中部 */
+ 
+</style> 
+ <link rel="stylesheet" type="text/css" href="caidan.css" >
+<script>
+    window.onload=function(){
+            /*
+    点击按钮以后，修改 大小
+    
+    */
+    var yqlj = document.getElementById("yqlj");
+    var zhankai =  document.getElementById("zhankai");
+    var count=0;
+    zhankai.onclick = function(){
+        if(count==0){
+            yqlj.style.height="110px";
+           zhankai.innerHTML="∧";
+           count++;//++了之后 他就不等于0 然后响应了函数之后重新返回上面 onclick 运算 然后 计算到下面的else语句重新等于0
+}else{
+         yqlj.style.height="20px";
+         zhankai.innerHTML="∨";
+          count=0;
+}
+
+}
+
+
+
+    }
+</script>
+</head>
+ 
+<body> 
+ <div class="dingbu">
+    <a class="logo" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img src="src-1/1.png"  alt="logo" /></a>
+    
+   <div class="dingbu1">
+        <a href="">  <img class="dingbu2" src="src-1/Icons White/Notifications Icon Copy 24.svg"style="width:20px;height:20px;"/>
+       </a>
+   </div>
+   <div class="dbzb">
+   <a href=""> <img class="dingbu3" src="src-1/Icons White/Notifications Icon Copy 26.svg"style="width:20px;height:20px;"/>
+   </a>
+   <img class="tongji" src="src-1/2.png" style="width:200px;height:20px;" alt="统计" />
+   <a href=""> <img class="dingbu4" src="src-1/Icons White/Notifications Icon Copy 23.svg"style="width:20px;height:20px;"/>
+   </a>
+   <a href=""> <img class="dingbu5" src="src-1/Icons White/Notifications Icon Copy 22.svg"style="width:20px;height:20px;"/>
+   </a>
+   <a href=""> <img class="dingbu6" src="src-1/Icons White/Notifications Icon.svg"style="width:20px;height:20px;"/>
+   </a>
+   <div class="Username">
+   <ul class="nav">
+        <li><a  id="yiji" href="">Username ▼</a>
+            <ul class="list">
+                <li><a href="" class="out" >Personal Center</a></li>
+                <li><a href=""class="out" >Help</a></li>
+                <li><a href=""class="out"  >Settings</a></li>
+                <li><a href="" class="out" >Sign out</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</div></div>
+</div>
+<div class="zhongbu">
+   <div class="zb">
+
+   </div> 
+</div>
+</body>
+</html>
+ 

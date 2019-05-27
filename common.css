@@ -1,3 +1,90 @@
-body{
-    border: 5px solid #888;
+.demo{
+    border: solid 2px orange;
+    display: flex;
+    width:500px;
+    height: 100px;
+  
 }
+
+.item{display: block;
+    background-color: blueviolet;
+    border: solid 1px black;
+    color: white;
+    width: 50px;
+    padding: 20px;
+}
+
+.diyige{   
+     border: solid 2px red;
+   width:100%;    
+    margin:0 auto;
+    word-break:break-all;
+     display: inline-block;
+     height:auto; 
+    
+   
+} 
+.dingbu{
+   display: block;height:auto;
+    background-color: rgb(34,46,66);
+    width: 77%;
+    margin:0 auto;    position: relative;
+}
+.mk1{   
+   height: 70px;
+    background-color:rgb(34,46,66);
+    
+    display: inline-block;
+    float: left;
+   margin:0;
+}
+.logo img{
+   height: 70px;
+   width: 250px;
+
+}
+.mk2{
+   
+   height: 70px;
+   width: 65px;
+    background-color: rgb(34,46,66);     border: solid 1px black;
+    display: inline-block;
+  margin: 0 auto;
+float: left;
+  text-align: center;
+}
+.dingbu2{
+   left: 0px;
+   top: 35%;
+   position: relative;
+}
+
+
+.mk5{ 
+   
+   width: 60px;
+    height: 70px;
+    background-color:gray;       float:left;
+    display: inline-block;
+    margin: 0 auto;
+border: 1px solid black;
+  
+}
+.mk10{ 
+   
+   width: 60px;
+    height: 70px;
+    background-color:gray;   float: right;     
+    display: inline-block;
+    margin: 0 auto;
+border: 1px solid black;
+  
+}
+.mk9{
+ 
+    height: 70px;
+    background-color:red;       float: right;
+    display: inline-block;
+    margin: 0 auto;
+}
+.clear{ clear:both} 
