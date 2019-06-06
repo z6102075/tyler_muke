@@ -60,31 +60,46 @@ float: left;
 }
 
 
-.mk5{ 
-   
-   width: 60px;
-    height: 70px;
-    background-color:gray;       float:left;
-    display: inline-block;
-    margin: 0 auto;
-border: 1px solid black;
-  
-}
+ 
 .mk10{ 
    
-   width: 60px;
-    height: 70px;
-    background-color:gray;   float: right;     
-    display: inline-block;
-    margin: 0 auto;
-border: 1px solid black;
-  
-}
-.mk9{
- 
-    height: 70px;
-    background-color:red;       float: left;
-    display: inline-block;
-    margin: 0 auto;
+   padding: 0 8px;
+   height: 70px;
+   background-color:rgb(34,46,66);  float: left;     
+   display: inline-block;
+   margin: 0 auto;
+border: 1px solid rgb(34,46,66);
+ text-align: center
 }
 .clear{ clear:both} 
+.dingbu3{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.dingbu4{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.dingbu5{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.dingbu5{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.dingbu6{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.tongji {
+   display: inline-block;
+   top: 25px;
+   
+   position: relative;
+}

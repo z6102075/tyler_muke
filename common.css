@@ -62,9 +62,9 @@ float: left;
 
 .mk5{ 
    
-   width: 60px;
+   width: 240px;
     height: 70px;
-    background-color:gray;       float:left;
+    background-color:red;       float:left;
     display: inline-block;
     margin: 0 auto;
 border: 1px solid black;
@@ -72,13 +72,19 @@ border: 1px solid black;
 }
 .mk10{ 
    
-   width: 60px;
+    
     height: 70px;
-    background-color:gray;   float: right;     
+    background-color:rgb(34,46,66);  float: right;     
     display: inline-block;
     margin: 0 auto;
-border: 1px solid black;
-  
+   padding: 0 8px;
+   
+}
+.tongji {
+   display: inline-block;
+   top: 25px;
+ left: 0px;
+   position: relative;
 }
 .mk9{
  
@@ -86,5 +92,29 @@ border: 1px solid black;
     background-color:red;       float: right;
     display: inline-block;
     margin: 0 auto;
+    position: relative;
 }
 .clear{ clear:both} 
+.dingbu3{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.dingbu4{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.dingbu5{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.dingbu6{
+   display: inline-block;
+   top: 25px;
+   position: relative;
+}
+.mk12{
+   width: 250px;
+}

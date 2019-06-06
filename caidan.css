@@ -2,10 +2,8 @@
  a{text-decoration: none;}
     .nav{
         
-        width: 320px;
+         
         height: 50px;
-        float: right;
-        right: -480px;
         top:-5px;
         position: relative;
     }
