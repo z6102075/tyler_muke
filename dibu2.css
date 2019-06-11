@@ -1,0 +1,10 @@
+.dibu{
+    display: block;
+     background-color: red;
+     width: 77%;
+     margin:0 auto;  
+     height: 15%;
+     border-top: solid 1px black;
+     
+    position:relative;
+ }

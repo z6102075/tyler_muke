@@ -1,0 +1,20 @@
+.zhongbu{
+    display: block;
+     background-color: rgb(34,46,66);
+     width: 77%;
+     margin:0 auto;  
+     height: 80%;
+     border-top: solid 1px black;
+     top:-6px;
+    position:relative;
+ }
+ .touxiang{
+    display: inline-block;
+    
+ 
+    position: relative;
+}
+.touxiang img{
+    height: 115px;
+    width:180px;
+}
