@@ -32,7 +32,7 @@
 }
 .zbzb{
     display: inline-block;
-    width: 200px; 
+    width: 250px; 
     height: auto;
     
 }
@@ -50,12 +50,12 @@
 }
 .xinxi{
     display: block;
-    font-size: 12px; 
+    font-size:12px; 
     color:gainsboro;
     height: 50px;
     background-color: ;
     top: 20px;
-    left: 10%;
+    left: 3%;
     margin: 0 auto;
     padding: 0 8px;
     position: relative;
@@ -97,9 +97,11 @@
 }
 .spkj{
     display: inline-block;
-    left: 50px;
-    top:20px;
-    position: relative;vertical-align: top;
+    margin: 40px 0px 0px 0px;
+    /* 这里要设置margin来改变位置，因为用left并没有改变文本流里面的位置 */
+    position: relative;
+    width: 50%;
+    vertical-align: top;
 }
 .OV{
     display: block;
@@ -119,7 +121,7 @@
     
      left: 0px;
     top:0px;
-    width: 700px;
+    width: 100%;
     height: 420px;
     font-size: 17px;
     color:rgb(255, 255, 255);
@@ -144,10 +146,28 @@
 .sp{
     display: inline-block;
     float: left;
-     left: 11px;
-    top:50px;
-    position: absolute;
-    width:678px;
+     left: 20px;
+    top:0px;
+    position: relative;
+    width:95%;
     height:363px;
     object-fit:fill;
+}
+
+.you2{
+    display: inline-block;
+ height: 210px;
+ width: 29%;
+ margin: 75px 0px 0px 10px;
+    background-color: rgb(47,59,82);
+    position: relative;
+    vertical-align: top;
+}
+
+
+.chilun{
+    top: -30px;
+    float: right;
+    right: 5px;
+    position: relative;
 }

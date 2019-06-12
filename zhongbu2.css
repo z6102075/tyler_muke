@@ -1,7 +1,7 @@
 .zhongbu{
     display: block ;
      background-color: rgb(34,46,66);
-     width: 85%;
+     width: auto;
      margin:0 auto;  
      height: auto;
      border-top:  solid 1px black;
@@ -98,14 +98,19 @@
     color: rgb(172, 173, 173);
 }
 .spkj{
-    display: block;
+    display: inline-block;
+    margin: 40px 0px 0px 45px;
+    /* 这里要设置margin来改变位置，因为用left并没有改变文本流里面的位置 */
+    position: relative;
+    width: 70%;
+    vertical-align: top;
 }
 .OV{
     display: block;
     left: 0px;
     top:0px;
     font-size: 26px;
-    color:rgb(255, 255, 255);
+    color:red;
     margin: 0px auto;
     position: relative;
 }
@@ -118,8 +123,8 @@
     
      left: 0px;
     top:0px;
-    width: 700px;
-    height: 420px;
+    width: 100%;
+    height: 95%;
     font-size: 17px;
     color:rgb(255, 255, 255);
     margin: 0px auto;
@@ -130,7 +135,7 @@
     border-top-left-radius:5px; 
     border-bottom-left-radius:5px;
 }
-}
+
 .shiping p{
     display: inline-block;
 }   
@@ -144,10 +149,27 @@
 .sp{
     display: inline-block;
     float: left;
-     left: 11px;
-    top:50px;
-    position: absolute;
-    width:678px;
-    height:363px;
+     left: 5px;
+     
+    position: relative;
+    width:95%;
+    height: 95%;
     object-fit:fill;
 }
+.you2{
+    display: inline-block;
+    height: 210px;
+    width: 80%;
+    margin: 25px 0px 0px 20px;
+    background-color: rgb(47,59,82);
+    position: relative;
+    vertical-align: top;
+}
+
+
+.chilun{
+    
+    float: right;
+    right: 5px;
+    position: relative;
+}   
