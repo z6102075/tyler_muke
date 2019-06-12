@@ -1,7 +1,7 @@
 .zhongbu{
     display: block ;
      background-color: rgb(34,46,66);
-     width: 77%;
+     width: 85%;
      margin:0 auto;  
      height: auto;
      border-top:  solid 1px black;
@@ -17,4 +17,137 @@
 .touxiang img{
     height: 115px;
     width:180px;
+}
+.touxiang1{
+    display: inline-block;
+    top: 30px;
+    left:10%;
+ 
+ 
+    position: relative;
+}
+.touxiang1 img{
+    height: 115px;
+    left:10%;
+    width:180px;
+}
+.zbzb{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    
+    text-align: center;
+}
+.mk11-1{ 
+    display: inline-block;
+    height: 70px;
+    background-color: ;   
+    top: 30px;
+    left:22%;
+    margin: 0 auto;
+   padding: 0 8px;
+   position: relative;
+   
+}
+.xinxi{
+    
+    display: block;
+    font-size: 12px; 
+    color:gainsboro;
+    height: 50px;
+    background-color: ;
+    top: 20px;
+    left: 10%;
+    margin: 0 auto;
+    padding: 0 8px;
+    position: relative;
+}
+.sss{
+    display: inline-block;
+    top:0px;
+    float: left;
+    left: 0px;
+    position: relative;
+    height: 400px;
+    width: 200px;
+   
+}
+
+.sss li{
+    float: left;
+        left: 0px;
+        top: 10px;
+        width: 200px;
+        height: 50px;
+       position: relative;
+        background-color:rgb(73, 216, 204);
+        line-height: 50px;
+        text-align: center;
+        list-style:none;
+        text-decoration:none; display: inline-block;
+        border-left:8px rgb(31, 140, 250) solid;
+        border-top-right-radius:10px; 
+       
+        border-bottom-right-radius:10px;
+        background:rgb(34,46,66);
+}
+.sss li:hover{
+    background-color: rgb(32, 41, 60);
+}
+.sss a{
+    color: rgb(172, 173, 173);
+}
+.spkj{
+    display: block;
+}
+.OV{
+    display: block;
+    left: 0px;
+    top:0px;
+    font-size: 26px;
+    color:rgb(255, 255, 255);
+    margin: 0px auto;
+    position: relative;
+}
+.OV p{
+    margin: 0px auto;
+}
+
+.shiping{
+    display: inline-block;
+    
+     left: 0px;
+    top:0px;
+    width: 700px;
+    height: 420px;
+    font-size: 17px;
+    color:rgb(255, 255, 255);
+    margin: 0px auto;
+    background-color:rgb(47,59,82);
+    position: relative;       
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+}
+.shiping p{
+    display: inline-block;
+}   
+
+.sandian{
+    top:16px;
+    float: right;
+    right: 5px;
+    position: relative;
+}
+.sp{
+    display: inline-block;
+    float: left;
+     left: 11px;
+    top:50px;
+    position: absolute;
+    width:678px;
+    height:363px;
+    object-fit:fill;
 }

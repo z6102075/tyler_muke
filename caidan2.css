@@ -1,0 +1,86 @@
+ 
+ a{text-decoration: none;}
+    .nav{
+        
+         
+        height: 50px;
+        top:-5px;
+        position: relative;
+    }
+    .nav li{
+        float: left;
+        left: -40px;
+        width: 100px;
+        height: 50px;
+       position: relative;
+        background-color:rgb(34,46,66);
+        line-height: 50px;
+        text-align: center;
+        list-style:none;z-index:1;
+        border-top-right-radius:30px; 
+        border-top-left-radius:30px; 
+        border-bottom-left-radius:30px; 
+        border-bottom-right-radius:30px;
+        background:rgb(34,46,66);
+    }
+    
+    .nav li:hover{
+        background-color:rgb(69, 154, 240); 
+        z-index:1;
+        
+    }
+    .nav .mr0{
+        margin-right: 0;
+    }
+    .nav li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: rgb(202, 202, 202);
+        font-size: 14px;
+        z-index:1;
+        border-top-right-radius:30px; 
+        border-top-left-radius:30px; 
+        border-bottom-left-radius:30px; 
+        border-bottom-right-radius:30px;
+        
+    }
+    
+    .nav > li:nth-child(1){
+        position: relative;
+    }
+    .nav .list{
+        position: relative;
+        overflow: hidden;
+        width: 58px;
+        top: 0px;
+        z-index:1;
+        height:0;
+        transition: 1s;
+ 
+        
+    }
+ 
+    div#yiji:hover #yiji {
+        background-color: red;z-index:1;
+    }
+    .nav > li:nth-child(1):hover .list{
+        height: 202px;
+        z-index:1;
+        
+        }
+
+
+
+.out{
+    border-bottom:2px solid rgb(39, 39, 39);
+}
+div#yiji:hover .out{
+   background-color:rgb(34, 114, 179);
+}
+.out{
+    background-color:rgb(34, 114, 179);
+}
+.out:hover{
+    background-color:rgb(69, 154, 240); 
+}
