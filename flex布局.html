@@ -16,7 +16,27 @@
 <link rel="stylesheet" type="text/css" href="caidan.css" >
  
 <script>
+        window.onload=function(){
+            /*
+    点击按钮以后，修改 大小
     
+    */
+    var yqlj = document.getElementById("yqlj");
+    var zhankai =  document.getElementById("zhankai");
+    var count=0;
+    zhankai.onclick = function(){
+        if(count==0){
+            yqlj.style.height="110px";
+           zhankai.innerHTML="∧";
+           count++;//++了之后 他就不等于0 然后响应了函数之后重新返回上面 onclick 运算 然后 计算到下面的else语句重新等于0
+}else{
+         yqlj.style.height="20px";
+         zhankai.innerHTML="∨";
+          count=0;
+}
+
+}
+    }
 </script>
 </head>
  
@@ -107,7 +127,8 @@
     <li><a href=""   >History</a></li>
     <li><a href=""  >Settings</a></li>
 </div>
-    </div><div class="zbyb">
+    </div>
+    <div class="zbyb">
  <div class="spkj">   
  <div class="OV"><p>Overview</p></div> 
  <div class="shiping">
@@ -139,8 +160,67 @@
  
 </div>
 </div>
+<a href="javascript:;"  id="zhankai">∨</a> 
 </div>
- 
+
+           <dd id="yqlj" >
+         <a href="http://www.lagou.com/"  >拉勾网</a> 
+        <a href="http://www.lagou.com/"  >教师网</a> 
+        <a href="http://www.lagou.com/"  >招聘</a> 
+        <a href="http://www.lagou.com/"  >app下载</a> 
+        <a href="http://www.lagou.com/"  >求职网站</a> 
+        <a href="http://www.lagou.com/"  >中大网校</a> 
+        <a href="http://www.lagou.com/"  >教师招聘</a> 
+        <a href="http://www.lagou.com/"  >人人都是产经理</a> 
+        <a href="http://www.lagou.com/"  >新疆人才网</a>
+        <a href="http://www.lagou.com/"  >研究报告</a>
+        <a href="http://www.lagou.com/"  >互联网的一些事</a>
+        <a href="http://www.lagou.com/"  >人才招聘网</a>
+        <a href="http://www.lagou.com/"  >阿里巴巴</a>
+        <a href="http://www.lagou.com/"  >拉勾网</a> 
+        <a href="http://www.lagou.com/"  >教师网</a> 
+        <a href="http://www.lagou.com/"  >招聘</a> 
+        <a href="http://www.lagou.com/"  >app下载</a> 
+        <a href="http://www.lagou.com/"  >求职网站</a> 
+        <a href="http://www.lagou.com/"  >中大网校</a> 
+        <a href="http://www.lagou.com/"  >教师招聘</a> 
+        <a href="http://www.lagou.com/"  >人人都是产经理</a> 
+        <a href="http://www.lagou.com/"  >新疆人才网</a>
+        <a href="http://www.lagou.com/"  >研究报告</a>
+        <a href="http://www.lagou.com/"  >互联网的一些事</a>
+        <a href="http://www.lagou.com/"  >人才招聘网</a>
+        <a href="http://www.lagou.com/"  >阿里巴巴</a> 
+        <a href="http://www.lagou.com/"  >拉勾网</a> 
+        <a href="http://www.lagou.com/"  >教师网</a> 
+        <a href="http://www.lagou.com/"  >招聘</a> 
+        <a href="http://www.lagou.com/"  >app下载</a> 
+        <a href="http://www.lagou.com/"  >求职网站</a> 
+        <a href="http://www.lagou.com/"  >中大网校</a> 
+        <a href="http://www.lagou.com/"  >教师招聘</a> 
+        <a href="http://www.lagou.com/"  >人人都是产经理</a> 
+        <a href="http://www.lagou.com/"  >新疆人才网</a>
+        <a href="http://www.lagou.com/"  >研究报告</a>
+        <a href="http://www.lagou.com/"  >互联网的一些事</a>
+        <a href="http://www.lagou.com/"  >人才招聘网</a>
+        <a href="http://www.lagou.com/"  >阿里巴巴</a> 
+        <a href="http://www.lagou.com/"  >拉勾网</a> 
+        <a href="http://www.lagou.com/"  >教师网</a> 
+        <a href="http://www.lagou.com/"  >招聘</a> 
+        <a href="http://www.lagou.com/"  >app下载</a> 
+        <a href="http://www.lagou.com/"  >求职网站</a> 
+        <a href="http://www.lagou.com/"  >中大网校</a> 
+        <a href="http://www.lagou.com/"  >教师招聘</a> 
+        <a href="http://www.lagou.com/"  >人人都是产经理</a> 
+        <a href="http://www.lagou.com/"  >新疆人才网</a>
+        <a href="http://www.lagou.com/"  >研究报告</a>
+        <a href="http://www.lagou.com/"  >互联网的一些事</a>
+        <a href="http://www.lagou.com/"  >人才招聘网</a>
+        <a href="http://www.lagou.com/"  >阿里巴巴</a> 
+    </dd>
+       
+  
+       
+
 </body>
 </html>
  

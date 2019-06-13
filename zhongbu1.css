@@ -229,8 +229,49 @@ border-bottom-left-radius:5px;
 display: inline-block;
  height: auto;
  width: 80%;
- 
  top:0px;
- 
 position: relative;
+}
+#yqlj {
+    height: 20px;
+    width: 85%;
+   
+    overflow: hidden;
+    position: relative;
+    display: block;
+     background-color: rgb(34,46,66);
+top: -10px;
+     margin:0 auto;  
+ 
+     border-top: solid 4px rgb(126, 190, 228);
+      
+ 
+}
+#yqlj a{
+    color: red;
+}
+#zhankai {
+     
+    display: inline-block;
+    left: 48%;
+    width: 40px;
+    height: 25px;
+     text-align: center;
+     position: absolute;
+    font-size: 18px;
+    bottom: -10px;
+     background-image: url("src-1/Oval.svg");
+     background-size: 50%;
+     background-repeat: no-repeat;
+    background-position: 10px 2px;
+    text-decoration: none;
+    z-index:2;
+    color: white;
+ 
+}
+.zktb {
+    display: inline-block;
+    left: 47.65%;
+    top: 2px;
+    position: absolute;
 }
