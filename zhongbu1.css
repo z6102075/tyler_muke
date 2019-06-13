@@ -32,9 +32,8 @@
 }
 .zbzb{
     display: inline-block;
-    width: 250px; 
-    height: auto;
-    
+    width: 18%; 
+    vertical-align: top;
 }
 .mk11-1{ 
      
@@ -100,7 +99,7 @@
     margin: 40px 0px 0px 0px;
     /* 这里要设置margin来改变位置，因为用left并没有改变文本流里面的位置 */
     position: relative;
-    width: 50%;
+    width: 60%;
     vertical-align: top;
 }
 .OV{
@@ -140,7 +139,13 @@
 .sandian{
     top:16px;
     float: right;
-    right: 5px;
+    right: 0px;
+    position: relative;
+}
+.sandian1{
+    top:16px;
+    float: right;
+    right: -15px;
     position: relative;
 }
 .sp{
@@ -150,24 +155,82 @@
     top:0px;
     position: relative;
     width:95%;
-    height:363px;
+    height:85%;
     object-fit:fill;
 }
 
 .you2{
     display: inline-block;
  height: 210px;
- width: 29%;
+ width: 93%;
  margin: 75px 0px 0px 10px;
     background-color: rgb(47,59,82);
     position: relative;
     vertical-align: top;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.you1{
+    display: inline-block;
+ height: auto;
+ width: 38%;
+    position: relative;
+    vertical-align: top;
+    top:-1px;
+}
+.zzx{
+    display: inline-block;
+ height: 200px;
+ width: 45%;
+ margin: 10px 0px 0px 10px;
+    background-color:rgb(47,59,82);
+    position: relative;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.zzx1{
+    display: inline-block;
+ height: 200px;
+ width: 45%;
+ margin: 10px 0px 0px 5px;
+    background-color:rgb(47,59,82);
+    position: relative;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
 }
 
-
+.zzx2{
+    display: inline-block;
+ height: 200px;
+ width: 97%;
+ left:;
+ top:;
+ margin: 5px 0px 0px 0px;
+background-color:rgb(47,59,82);
+position: relative;
+border-top-right-radius:5px; 
+border-bottom-right-radius:5px;
+border-top-left-radius:5px; 
+border-bottom-left-radius:5px;
+}
 .chilun{
     top: -30px;
     float: right;
     right: 5px;
     position: relative;
+}
+.zbyb{
+display: inline-block;
+ height: auto;
+ width: 80%;
+ 
+ top:0px;
+ 
+position: relative;
 }

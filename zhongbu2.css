@@ -139,37 +139,95 @@
 .shiping p{
     display: inline-block;
 }   
-
 .sandian{
     top:16px;
     float: right;
-    right: 5px;
+    right: 0px;
+    position: relative;
+}
+.sandian1{
+    top:15%;
+    float: right;
+    right: -15px;
     position: relative;
 }
 .sp{
     display: inline-block;
     float: left;
      left: 5px;
-     
     position: relative;
     width:95%;
-    height: 95%;
+    height: 90%;
     object-fit:fill;
+}
+.you1{
+    display: inline-block;
+    margin:40px 0px 0px 25px;
+    position: relative;
+    width: 70%;
+ 
+    vertical-align: top;
 }
 .you2{
     display: inline-block;
-    height: 210px;
-    width: 80%;
+    width: 100%;
+    height: 200px;
     margin: 25px 0px 0px 20px;
     background-color: rgb(47,59,82);
     position: relative;
     vertical-align: top;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
 }
-
-
+.zzx{
+    display: inline-block;
+ height: 200px;
+ width: 210px;
+ margin: 25px 0px 0px 20px;
+    background-color:rgb(47,59,82);
+    position: relative;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.zzx1{
+    display: inline-block;
+ height: 200px;
+ width: 210px;
+ margin: 25px 0px 0px 20px;
+    background-color:rgb(47,59,82);
+    position: relative;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.zzx2{
+    display: inline-block;
+ height: 200px;
+ width: 70%;
+ left:;
+ top:;
+ margin: 65px 0px 0px 45px;
+background-color:rgb(47,59,82);
+position: relative;
+border-top-right-radius:5px; 
+border-bottom-right-radius:5px;
+border-top-left-radius:5px; 
+border-bottom-left-radius:5px;
+}
+.zbyb{
+ 
+     width: 100%;
+     
+ 
+    }
 .chilun{
     
     float: right;
     right: 5px;
     position: relative;
-}   
+} 
