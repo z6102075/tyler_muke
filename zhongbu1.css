@@ -211,21 +211,7 @@
  width: 97%;
  left:;
  top:;
- margin: 5px 0px 0px 0px;
-background-color:rgb(47,59,82);
-position: relative;
-border-top-right-radius:5px; 
-border-bottom-right-radius:5px;
-border-top-left-radius:5px; 
-border-bottom-left-radius:5px;
-}
-.zzx3{
-    display: inline-block;
- height: 200px;
- width: 200px;
- left:;
- top:;
- margin: 30px 0px 0px 40px;
+ margin: 5px 0px 20px 0px;
 background-color:rgb(47,59,82);
 position: relative;
 border-top-right-radius:5px; 
@@ -246,20 +232,7 @@ display: inline-block;
  top:0px;
 position: relative;
 }
-#yqlj {
-    height: 20px;
-    width: 85%;
-    overflow: hidden;
-    position: relative;
-    display: block;
-     background-color: rgb(34,46,66);
-    top: -10px;
-     margin:0 auto;  
-     border-top: solid 4px rgb(126, 190, 228);
-}
-#yqlj a{
-    color: red;
-}
+
 #zhankai {
      
     display: inline-block;

@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="mobile.css">
 <title>                </title> 
 <style> 
+
 </style>
 <link rel="stylesheet" type="text/css" href="caidan.css" >
  
@@ -23,15 +24,20 @@
     */
     var yqlj = document.getElementById("yqlj");
     var zhankai =  document.getElementById("zhankai");
+    var xlyc= document.getElementsByClassName("xlyc")
     var count=0;
     zhankai.onclick = function(){
         if(count==0){
-            yqlj.style.height="auto";
+            yqlj.style.height="32%";
+            yqlj.style.transition='1s' ;
            zhankai.innerHTML="∧";
+           
            count++;//++了之后 他就不等于0 然后响应了函数之后重新返回上面 onclick 运算 然后 计算到下面的else语句重新等于0
 }else{
-         yqlj.style.height="20px";
+         yqlj.style.height="0px";
+         yqlj.style.transition='1s' ;
          zhankai.innerHTML="∨";
+          
           count=0;
 }
 
@@ -189,16 +195,43 @@
                 <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
              
             </div>
+ 
+    </dd>
+    <div class="dibu1">
+        <div class="dibu1-1">
             <div class="zzx3">
                     <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
                  
-                </div>            <div class="zzx3">
+                </div>
+                <div class="zzx3">
+                    <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+                 
+                </div>
+                <div class="zzx3">
+                    <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+                 
+                </div>
+                <div class="zzx3">
+                    <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+                 
+                </div>
+                <div class="zzx3">
+                    <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+                 
+                </div>
+                <div class="zzx3">
+                    <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+                 
+                </div>
+                <div class="zzx3">
                         <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
                      
-                    </div>
-            
-    </dd>
-</div>
+                    </div>           
+                     <div class="zzx3">
+                            <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+                         
+                        </div></div>
+    </div>
        
   
        

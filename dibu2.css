@@ -14,8 +14,8 @@ border-top-left-radius:5px;
 border-bottom-left-radius:5px;
 }
 #yqlj {
-   height: 20px;
-   width: auto;
+   height: 0px;
+   width:100%;
    overflow: hidden;
    position: relative;
    display: block;
@@ -38,4 +38,28 @@ border-bottom-left-radius:5px;
     border-top: solid 1px black;
      
    position:relative;
+}
+.dibu1{
+   display: block;
+    background-color: rgb(34,46,66);
+     
+    width:100%;
+   
+    margin:0 auto;  
+    
+    border-top: solid 1px black;
+    overflow:auto;
+   position:relative;
+}
+.dibu1-1 {
+   
+   width: 2000px;
+   overflow: hidden;
+   position: relative;
+   display: block;
+    background-color: rgb(34,46,66);
+   top: -10px;
+    margin:0 auto;  
+    border-top: solid 4px rgb(126, 190, 228);
+     overflow:auto;
 }

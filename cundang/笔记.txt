@@ -1,0 +1,9 @@
+1、overflow:auto；内容会被修剪，超出设置的宽高后会出现滚动条
+
+2、overflow:scroll;内容会被修剪，不管内容是否超出，都会出现滚动条的位置
+
+3、overflow:visible;这个是默认值，内容不会被修剪，会出现在元素框外面。
+
+4、overflow:hidden;内容被修剪，多余的内容被隐藏
+
+5、overflow:inherit;从父元素那里继承overflow的值。
