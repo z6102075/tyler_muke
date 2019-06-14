@@ -1,70 +1,87 @@
-<!DOCTYPE html>
-<html>
-<head> 
-<meta charset="utf-8"> 
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale">
-<title>                </title> 
-
-<style>
  
-body{
-  
-    margin: 0px;
-   padding: 0px;
-   
-   width: 95%;
-}
- .dingbu{
-    display: block;height:auto;
-     background-color: rgb(34,46,66);
-     
-     width: 81.5%;
-     margin:0 auto;
- }
-
- .dingbu img{
-    height: 70px;
-    width: 250px;
- 
- }
-</style> 
- <link rel="stylesheet" type="text/css" href="caidan.css" >
-<script>
-    window.onload=function(){
-            /*
-    点击按钮以后，修改 大小
-    
-    */
-    var yqlj = document.getElementById("yqlj");
-    var zhankai =  document.getElementById("zhankai");
-    var count=0;
-    zhankai.onclick = function(){
-        if(count==0){
-            yqlj.style.height="110px";
-           zhankai.innerHTML="∧";
-           count++;//++了之后 他就不等于0 然后响应了函数之后重新返回上面 onclick 运算 然后 计算到下面的else语句重新等于0
-}else{
-         yqlj.style.height="20px";
-         zhankai.innerHTML="∨";
-          count=0;
-}
-
-}
-
-
-
-    }
-</script>
+<html> 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="滚动条, scrollbar, 页面底部, 聊天窗口, " />
+    <meta name="description" content="有些时候（如开发聊天程序），我们需要将将滚动条（scrollbar）保持在最底部，比如聊天窗口，最新发出和收到的信息要显示在最 下方，如果要看到最下方的内容，就必须保证滚动条保持在最底部。" />
+    <title>将滚动条（scrollbar）保持在最底部的方法 - 滚动条, scrollbar, 页面底部, 聊天窗口, </title>
 </head>
+<style>
+.wrap {
+    text-align: center;
+}
+.wrap > .box {
+    width:  auto;
+    height: auto;
+    margin: 75px;
+    display: inline-block;
+
+    cursor: pointer;
+
+    text-align: center;
+    line-height: 150px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #fff;
+
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+.wrap > .red-box {
+    background-color: red;
+}
+.wrap > .red-box:hover {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+
+.wrap > .green-box {
+    background-color: green;
+}
+.wrap > .green-box:hover {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+.wrap > .blue-box {
+    background-color: blue;
+}
+.wrap > .blue-box:hover {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+ .aaa{
+    display: inline-block;
+    height: 200px;
+    width: 45%;
+    margin: 10px 0px 0px 10px;
+    background-color: rgb(47,59,82);
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+ }
+</style>
+<body><div class="wrap">
+        <section class="box red-box">translateX</section>
+        <section class="box green-box">translateY
+ <div class="aaa"></div>
+        </section>
+        <section class="box blue-box">translate</section>
+    </div>
  
-<body> 
- <div class="dingbu">
-    <a class="logo" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img src="src-1/1.png"  alt="logo" /></a>
-    
-   <div class="dingbu1">
-        <a href="">  <img class="dingbu2" src="src-1/Icons White/Notifications Icon Copy 24.svg"style="width:20px;height:20px;"/>
-       </a>
-  
 </body>
 </html>
- 

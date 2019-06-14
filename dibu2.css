@@ -15,13 +15,41 @@ border-bottom-left-radius:5px;
 }
 #yqlj {
    height: 0px;
-   width:100%;
+   width: 100%;
    overflow: hidden;
    position: relative;
    display: block;
     background-color: rgb(34,46,66);
    top: -10px;
     margin:0 auto;  
+    
+    border-top: solid 4px rgb(126, 190, 228);
+     overflow:auto;
+}
+#yqlj.fadeout{
+   height: 38%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   display: block;
+    background-color: rgb(34,46,66);
+   top: -10px;
+    margin:0 auto;  
+    transition:1s;
+    border-top: solid 4px rgb(126, 190, 228);
+     overflow:auto;
+     overflow-y: hidden
+}
+#yqlj.fadein{
+   height: 0px;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   display: block;
+    background-color: rgb(34,46,66);
+   top: -10px;
+    margin:0 auto;  
+    transition:1s;
     border-top: solid 4px rgb(126, 190, 228);
      overflow:auto;
 }
@@ -44,7 +72,7 @@ border-bottom-left-radius:5px;
     background-color: rgb(34,46,66);
      
     width:100%;
-   
+   top:-10px;
     margin:0 auto;  
     
     border-top: solid 1px black;
