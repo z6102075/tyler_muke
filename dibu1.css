@@ -21,13 +21,14 @@ border-bottom-left-radius:5px;
     display: block;
      background-color: rgb(34,46,66);
     top: -10px;
-     margin:0 auto;  
+     margin:0 auto;   overflow-y: hidden;
      border-top-right-radius:900px; 
      border-top-left-radius:900px;  
-     border-bottom-right-radius:200px; 
-     border-bottom-left-radius:200px; 
-     border-top: solid 4px rgb(126, 190, 228);
+     border-bottom-right-radius:900px; 
+     border-bottom-left-radius:900px; 
+ 
      overflow:auto;
+     overflow-x: hidden;
 }
 .xlyc{
     height: 200px;
@@ -38,8 +39,12 @@ border-bottom-left-radius:5px;
      background-color: rgb(34,46,66);
     top: -10px;
      margin:0 auto;  
-     
-     border-top: solid 4px rgb(126, 190, 228);
+     border-top-right-radius:900px; 
+     border-top-left-radius:900px;  
+     border-bottom-right-radius:900px; 
+     border-bottom-left-radius:900px; 
+     border-top: solid 54px rgb(126, 190, 228);
+     border-bottom: solid 54px rgb(126, 190, 228);
       overflow:auto;
 }
 #yqlj a{
@@ -64,7 +69,7 @@ border-bottom-left-radius:5px;
      border-top: solid 1px black;
      overflow:auto;
     position:relative;
-    
+    border-top: solid 4px rgb(126, 190, 228);
  } 
  #yqlj.fadeout{
     height: 38%;
@@ -82,7 +87,10 @@ border-bottom-left-radius:5px;
       border-top-right-radius:0px; 
       border-top-left-radius:0px;  
       border-bottom-right-radius:0px;
-      border-bottom-left-radius:0px; 
+      border-bottom-left-radius:0px;   overflow-x: hidden;
+      }
+      #yqlj.fadeout:hover{
+        overflow-x: auto;
       }
 #yqlj.fadein{
     height: 0px;
@@ -95,10 +103,12 @@ border-bottom-left-radius:5px;
      margin:0 auto;  
      transition:2s;
      border-top: solid 4px rgb(126, 190, 228);
-      overflow:auto;  
+ 
+      overflow:auto;   overflow-y: hidden;
       border-top-right-radius:900px; 
       border-top-left-radius:900px;  
-      border-bottom-right-radius:200px; 
-      border-bottom-left-radius:200px;  
+      border-bottom-right-radius:900px; 
+      border-bottom-left-radius:900px;  
+      overflow-x: hidden;
 }
 /* ------------ */
