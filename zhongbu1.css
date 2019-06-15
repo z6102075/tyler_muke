@@ -151,14 +151,18 @@
 .sp{
     display: inline-block;
     float: left;
-     left: 20px;
-    top:0px;
+     left: 2.5%;
+    top:5%;
     position: relative;
     width:95%;
-    height:85%;
+    height:87%;
     object-fit:fill;
 }
-
+.shiping p{
+    left: 3px;
+    top: 10px;
+    position: relative;
+}
 .you2{
     display: inline-block;
  height: 210px;
