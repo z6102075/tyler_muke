@@ -43,8 +43,7 @@ border-bottom-left-radius:5px;
      border-top-left-radius:900px;  
      border-bottom-right-radius:900px; 
      border-bottom-left-radius:900px; 
-     border-top: solid 54px rgb(126, 190, 228);
-     border-bottom: solid 54px rgb(126, 190, 228);
+ 
       overflow:auto;
 }
 #yqlj a{
@@ -63,7 +62,7 @@ border-bottom-left-radius:5px;
  .dibu1{
     display: block;
      background-color: rgb(34,46,66);
-     width:85%;
+     width:100%;
     top: -10px;
      margin:0 auto;          padding: 0;
      border-top: solid 1px black;
@@ -73,7 +72,7 @@ border-bottom-left-radius:5px;
  } 
  #yqlj.fadeout{
     height: 38%;
-    width: 85%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     display: block;
@@ -82,6 +81,7 @@ border-bottom-left-radius:5px;
      margin:0 auto;  
      transition:2s;
      border-top: solid 4px rgb(126, 190, 228);
+     border-bottom: solid 4px rgb(126, 190, 228);
       overflow:auto;
       overflow-y: hidden;
       border-top-right-radius:0px; 

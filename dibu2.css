@@ -1,11 +1,11 @@
 
 .zzx3{
    display: inline-block;
-height: 200px;
+height: 65%;
 width: 200px;
 left:;
 top:;
-margin: 30px 0px 0px 40px;
+margin: 40px 0px 20px 40px;
 background-color:rgb(47,59,82);
 position: relative;
 border-top-right-radius:5px; 
@@ -13,19 +13,63 @@ border-bottom-right-radius:5px;
 border-top-left-radius:5px; 
 border-bottom-left-radius:5px;
 }
-#yqlj {
+#yqlj{
    height: 0px;
-   width: 100%;
+   width: 0%;
+   overflow: hidden;
+   position: relative;
+   display: block;
+    background-color: rgb(34,46,66);
+   top: -10px;
+    margin:0 auto;   overflow-y: hidden;
+    border-top-right-radius:900px; 
+    border-top-left-radius:900px;  
+    border-bottom-right-radius:900px; 
+    border-bottom-left-radius:900px; 
+
+    overflow:auto;
+    overflow-x: hidden;
+}
+.xlyc{
+   height: 200px;
+   width: 85%;
    overflow: hidden;
    position: relative;
    display: block;
     background-color: rgb(34,46,66);
    top: -10px;
     margin:0 auto;  
-    
-    border-top: solid 4px rgb(126, 190, 228);
+    border-top-right-radius:900px; 
+    border-top-left-radius:900px;  
+    border-bottom-right-radius:900px; 
+    border-bottom-left-radius:900px; 
+
      overflow:auto;
 }
+#yqlj a{
+ 
+}
+.dibu{
+   display: block;
+    background-color: rgb(34,46,66);
+    height: 100%;
+   width: 2000px;
+    margin:0 auto;  
+    border-top: solid 1px black;
+   position:relative;
+ 
+}
+.dibu1{
+   display: block;
+    background-color: rgb(34,46,66);
+    width:100%;
+   top: -10px;
+    margin:0 auto;          padding: 0;
+    border-top: solid 1px black;
+    overflow:auto;
+   position:relative;
+   border-top: solid 4px rgb(126, 190, 228);
+} 
 #yqlj.fadeout{
    height: 38%;
    width: 100%;
@@ -35,59 +79,36 @@ border-bottom-left-radius:5px;
     background-color: rgb(34,46,66);
    top: -10px;
     margin:0 auto;  
-    transition:1s;
+    transition:2s;
     border-top: solid 4px rgb(126, 190, 228);
+
      overflow:auto;
-     overflow-y: hidden
-}
+     overflow-y: hidden;
+     border-top-right-radius:0px; 
+     border-top-left-radius:0px;  
+     border-bottom-right-radius:0px;
+     border-bottom-left-radius:0px;   overflow-x: hidden;
+     }
+     #yqlj.fadeout:hover{
+       overflow-x: auto;
+     }
 #yqlj.fadein{
    height: 0px;
-   width: 100%;
+   width: 0%;
    overflow: hidden;
    position: relative;
    display: block;
     background-color: rgb(34,46,66);
    top: -10px;
     margin:0 auto;  
-    transition:1s;
-    border-top: solid 4px rgb(126, 190, 228);
-     overflow:auto;
+    transition:2s;
+    border-top: solid 0px rgb(126, 190, 228);
+
+     overflow:auto;   overflow-y: hidden;
+     border-top-right-radius:900px; 
+     border-top-left-radius:900px;  
+     border-bottom-right-radius:900px; 
+     border-bottom-left-radius:900px;  
+     overflow-x: hidden;
 }
-#yqlj a{
- 
-}
-.dibu{
-   display: block;
-    background-color: rgb(34,46,66);
-    width: 2000px;
-   
-    margin:0 auto;  
-    
-    border-top: solid 1px black;
-     
-   position:relative;
-}
-.dibu1{
-   display: block;
-    background-color: rgb(34,46,66);
-     
-    width:100%;
-   top:-10px;
-    margin:0 auto;  
-    
-    border-top: solid 1px black;
-    overflow:auto;
-   position:relative;
-}
-.dibu1-1 {
-   
-   width: 2000px;
-   overflow: hidden;
-   position: relative;
-   display: block;
-    background-color: rgb(34,46,66);
-   top: -10px;
-    margin:0 auto;  
-    border-top: solid 4px rgb(126, 190, 228);
-     overflow:auto;
-}
+/* ------------ */
