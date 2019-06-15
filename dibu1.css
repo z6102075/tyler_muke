@@ -63,10 +63,11 @@ border-bottom-left-radius:5px;
     display: block;
      background-color: rgb(34,46,66);
      width:100%;
+     height: 100%;
     top: -10px;
      margin:0 auto;          padding: 0;
      border-top: solid 1px black;
-     overflow:auto;
+     overflow:hidden;
     position:relative;
     border-top: solid 4px rgb(126, 190, 228);
  } 

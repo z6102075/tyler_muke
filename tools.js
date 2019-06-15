@@ -14,7 +14,7 @@ window.onload = function(){
     //获取页面中所有的img标签
     var imgArr = document.getElementsByTagName("img");
     //设置imgList的宽度 
-    imgList.style.width = 930*imgArr.length+"px";
+    imgList.style.width = 210  *imgArr.length+"px";
 /*
 设置导航按钮剧中
 */
@@ -92,9 +92,9 @@ autoChange();
             // 使索引自增
             index++;
             // 判断index值
-            index %=imgArr.length;
+            index %=5;
             // 执行动画，切换图片
-            move(imgList,"left",-920*index,50,function(){
+            move(imgList,"left",-924*index,50,function(){
                 // 修改导航按钮
                 setA();
             })

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+ <style>
+ *{
+    margin: 0; /*先把默认的内外边距给设置为0*/ 
+    padding: 0;
+ }
+ /*
+ 设置outer的样式 outer是图片框进来的那个元素 要清楚
+ */
+ #outer{
+     /*
+     设置宽和高
+     */
+     top: 0px;
+    width:auto;
+    height: 250px;
+/* 居中 */
+margin: 0px auto;
+/*设置背景颜色*/
+ 
+/*设置padding*/
+padding :10px 0;
+/*开启相对定位*/
+position: relative;
+/*裁剪溢出的内容*/
+overflow: hidden;
+ }
+ /*设置imgList*/
+ #imgList{
+         /*去除项目符号*/
+     list-style: none;display: inline-block;
+     height: 100%;
+     /*设置ul的宽度，不然他是无法把li的块元素按照横着的元素摆放*/
+       width: 5000px;
+     background-color: rgb(34,46,66);
+    /* 开启绝对定位 */
+    position: absolute;
+    /*设置偏移量
+    每向左移动920px，就会显示到下一张图片*/
+    left:0px;
+ }
+ /*设置图片中的li*/
+ #imgList li{
+     display: inline-block;
+    width: 180px; 
+    height: 180px;
+    text-align: center;
+     /*设置浮动*/
+     
+     /*设置左右外边距*/
+     margin: 20px 0px 0px 20px;
+ }
+ /* 设置导航按钮 */
+ #navDiv{
+     /* 开启绝对定位 */
+     position: absolute;
+     /* 设置位置 */
+     bottom: 20px;
+     /* 设置left值 
+     outer 宽度 920
+     navDiv 宽度 35*5=175
+                920-175=745/2=372.5*/
+    /* left: 372.5px; */
+ }
+ #navDiv a{
+     /* 设置超链接浮动 */
+     float: left;
+     /* 设置超链接的宽和高 */
+    width: 25px;
+    height: 25px;
+    /* 设置背景颜色 */
+    background-color: rgb(164, 202, 247);
+    /* 设置左右外边距 */
+    margin: 0 5px;
+    /* 设置透明 */
+    opacity: 0.5;
+    /* 兼容IE8透明 */
+    filter:alpha(opacity=50);
+ }
+ /* 设置鼠标移入的效果 */
+ #navDiv a:hover{
+     background-color: rgba(153, 151, 151, 0.767);
+ }
+ .zhongbu{
+    display: block;
+     background-color: rgb(34,46,66);
+     width: 100%;
+     margin:0 auto;  
+     height: auto;
+     border-top: solid 1px black;
+     top:-6px;
+    position:relative;
+ }
+ .touxiang{
+    display: inline-block;
+    
+ 
+    position: relative;
+}
+.touxiang img{
+    height: 115px;
+    width:180px;
+}
+
+.touxiang1{
+    display: inline-block;
+    top: 30px;
+    left:10%;
+ 
+    position: relative;
+}
+.touxiang1 img{
+    height: 115px;
+    width:180px;
+}
+.zbzb{
+    display: inline-block;
+    width: 18%; 
+    vertical-align: top;
+}
+.mk11-1{ 
+     
+    display: inline-block;
+    height: 70px;
+    background-color: ;   
+    top: 30px;
+    left:22%;
+    margin: 0 auto;
+   padding: 0 8px;
+   position: relative;
+   
+}
+.xinxi{
+    display: block;
+    font-size:12px; 
+    color:gainsboro;
+    height: 50px;
+    background-color: ;
+    top: 20px;
+    left: 3%;
+    margin: 0 auto;
+    padding: 0 8px;
+    position: relative;
+}
+.sss{
+    display: inline-block;
+    top:0px;
+    float: left;
+    left: 0px;
+    position: relative;
+    height: 400px;
+    width: 200px;
+   
+}
+
+.sss li{
+    float: left;
+        left: 0px;
+        top: 10px;
+        width: 200px;
+        height: 50px;
+       position: relative;
+        background-color:rgb(73, 216, 204);
+        line-height: 50px;
+        text-align: center;
+        list-style:none;
+        text-decoration:none; display: inline-block;
+        border-left:8px rgb(31, 140, 250) solid;
+        border-top-right-radius:10px; 
+       
+        border-bottom-right-radius:10px;
+        background:rgb(34,46,66);
+}
+.sss li:hover{
+    background-color: rgb(32, 41, 60);
+}
+.sss a{
+    color: rgb(172, 173, 173);
+}
+.spkj{
+    display: inline-block;
+    margin: 40px 0px 0px 0px;
+    /* 这里要设置margin来改变位置，因为用left并没有改变文本流里面的位置 */
+    position: relative;
+    width: 60%;
+    vertical-align: top;
+}
+.OV{
+    display: block;
+    left: 0px;
+    top:0px;
+    font-size: 26px;
+    color:rgb(255, 255, 255);
+    margin: 0px auto;
+    position: relative;
+}
+.OV p{
+    margin: 0px auto;
+}
+
+.shiping{
+    display: inline-block;
+    
+     left: 0px;
+    top:0px;
+    width: 100%;
+    height: 420px;
+    font-size: 17px;
+    color:rgb(255, 255, 255);
+    margin: 0px auto;
+    background-color:rgb(47,59,82);
+    position: relative;       
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.shiping p{
+    display: inline-block;
+}
+
+.sandian{
+    top:16px;
+    float: right;
+    right: 0px;
+    position: relative;
+}
+.sandian1{
+    top:16px;
+    float: right;
+    right: -15px;
+    position: relative;
+}
+.sp{
+    display: inline-block;
+    float: left;
+     left: 20px;
+    top:0px;
+    position: relative;
+    width:95%;
+    height:85%;
+    object-fit:fill;
+}
+
+.you2{
+    display: inline-block;
+ height: 210px;
+ width: 93%;
+ margin: 75px 0px 0px 0px;
+ left: 1%;
+    background-color: rgb(47,59,82);
+    position: relative;
+    vertical-align: top;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.you1{
+    display: inline-block;
+ height: auto;
+ width: 38%;
+    position: relative;
+    vertical-align: top;
+    top:-1px;
+}
+.zzx{
+    display: inline-block;
+ height: 100%;
+ width: 100%;
+ margin: 0px 0px 0px 0px;
+ top: 0px;
+    background-color:rgb(47,59,82);
+    position: relative;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+.zzx1{
+    display: inline-block;
+ height: 200px;
+ width: 45%;
+ margin: 10px 0px 0px 5px;
+    background-color:red;
+    position: relative;
+    border-top-right-radius:5px; 
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;
+}
+
+.zzx2{
+    display: inline-block;
+ height: 200px;
+ width: 96%;
+ left:;
+ top:;
+ margin: 5px 0px 20px 0px;
+background-color:rgb(47,59,82);
+position: relative;
+border-top-right-radius:5px; 
+border-bottom-right-radius:5px;
+border-top-left-radius:5px; 
+border-bottom-left-radius:5px;
+}
+.chilun{
+    top: -30px;
+    float: right;
+    right: 5px;
+    position: relative;
+}
+.zbyb{
+display: inline-block;
+ height: auto;
+ width: 80%;
+ top:0px;
+position: relative;
+}
+
+#zhankai {
+     
+    display: inline-block;
+    left: 48%;
+    width: 40px;
+    height: 25px;
+     text-align: center;
+     position: absolute;
+    font-size: 18px;
+    bottom: -10px;
+     background-image: url("src-1/Oval.svg");
+     background-size: 50%;
+     background-repeat: no-repeat;
+    background-position: 10px 2px;
+    text-decoration: none;
+    z-index:2;
+    color: white;
+ 
+}
+.zktb {
+    display: inline-block;
+    left: 47.65%;
+    top: 2px;
+    position: absolute;
+}
+
+.wrap {
+    display: inline-block;
+    height:200px;
+    width: 45%;
+    left: 1%;
+   text-align: center;
+    background-color: rgb(34,46,66);
+    position: relative;
+}
+.two{
+    margin: 0px 0px 0px 5px ;
+    
+}
+.wrap > .box {
+    height:200px;
+    width: 100%;
+    top: 4%;
+     left: 0px;
+    display: inline-block;
+position: relative;
+    cursor: pointer;
+margin: 0px 0px 0px 0px ;
+    text-align: center;
+    line-height: 0px;
+    letter-spacing: 2px;
+    background-color: rgb(34,46,66);
+    
+
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+.wrap > .red-box {
+    background-color: red;
+}
+.wrap > .red-box:hover {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+
+.wrap > .green-box {
+    background-color: rgb(34,46,66);
+}
+.wrap > .green-box:hover {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+.wrap > .blue-box {
+    background-color: blue;
+}
+.wrap > .blue-box:hover {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+ .aaa{
+    display: inline-block;
+    height: 200px;
+    width: 45%;
+    margin: 10px 0px 0px 10px;
+    background-color: rgb(47,59,82);
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+ }
+ </style>
+ 
+ <!-- 引入工具样式表 -->
+ <script type="text/javascript"src="tools.js"></script>
+<script>
+</script>
+</head>
+ 
+<body>
+	<!-- 创建一个外部的div，来作为大的容器 -->
+    <div id="outer">
+        <!-- 创建一个ul，用于放置图片 -->
+                <ul id="imgList">
+        <li>            
+        <div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>                 <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>    
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>    
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>    
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>    
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>    
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>    
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+            <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+        </div></li>
+        <li><div class="zzx">
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
+            </div></li>
+                                                                                                        
+
+ 
+        </ul>
+        <!-- 创建导航按钮 -->
+        <div id="navDiv">
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+	
+</body>
+</html> 
