@@ -61,15 +61,22 @@ border-bottom-left-radius:5px;
 }
 .dibu1{
    display: block;
-    background-color: rgb(34,46,66);
-    width:100%;
-   top: -10px;
-    margin:0 auto;          padding: 0;
-    border-top: solid 1px black;
-    overflow:auto;
-   position:relative;
-   border-top: solid 4px rgb(126, 190, 228);
+   background-color: rgb(34,46,66);
+   width:100%;
+   height: 32%;
+  top: -10px;
+   margin:0 auto;    
+padding: 0;
+   border-top: solid 1px black;
+   overflow: hidden;
+  position:relative;
+  border-top: solid 4px rgb(126, 190, 228);
 } 
+.lbt{
+   width: 2000px;
+   height: 250px;
+   overflow-x:auto;
+}
 #yqlj.fadeout{
    height: 38%;
    width: 100%;
@@ -112,3 +119,14 @@ border-bottom-left-radius:5px;
      overflow-x: hidden;
 }
 /* ------------ */
+.llb{
+   display: block;
+   width: auto;
+   height: 100%;
+   overflow:auto;
+}
+.lbt{
+  overflow:auto;
+    width: 3000px;
+
+}
