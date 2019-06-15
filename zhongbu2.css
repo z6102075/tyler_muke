@@ -184,8 +184,9 @@
 .zzx{
     display: inline-block;
  height: 200px;
- width: 210px;
- margin: 25px 0px 0px 20px;
+ width: 100%;
+ margin: 0px 0px 0px 0px;
+ top: 0px;
     background-color:rgb(47,59,82);
     position: relative;
     border-top-right-radius:5px; 
@@ -196,8 +197,9 @@
 .zzx1{
     display: inline-block;
  height: 200px;
- width: 210px;
- margin: 25px 0px 0px 20px;
+ width: 100%;
+ margin: 0px 0px 0px 0px;
+ top: 0px;
     background-color:rgb(47,59,82);
     position: relative;
     border-top-right-radius:5px; 
@@ -257,3 +259,82 @@ border-bottom-left-radius:5px;
     top: 2px;
     position: absolute;
 }
+
+.wrap {
+    display: inline-block;
+    height:200px;
+    width: 45%;
+    left: 1%;
+   text-align: center;
+    background-color: rgb(34,46,66);
+    position: relative;
+}
+.two{
+    margin: 0px 0px 0px 5px ;
+    left: 10%;
+}
+.wrap > .box {
+    height:200px;
+    width: 100%;
+    top: 4%;
+     left: 12px;
+    display: inline-block;
+position: relative;
+    cursor: pointer;
+margin: 0px 0px 0px 0px ;
+    text-align: center;
+    line-height: 0px;
+    letter-spacing: 2px;
+    background-color: rgb(34,46,66);
+    
+
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+.wrap > .red-box {
+    background-color: red;
+}
+.wrap > .red-box:hover {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+
+.wrap > .green-box {
+    background-color: rgb(34,46,66);
+}
+.wrap > .green-box:hover {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+.wrap > .blue-box {
+    background-color: blue;
+}
+.wrap > .blue-box:hover {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+ .aaa{
+    display: inline-block;
+    height: 200px;
+    width: 45%;
+    margin: 10px 0px 0px 10px;
+    background-color: rgb(47,59,82);
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+ }
