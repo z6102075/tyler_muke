@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+ 
+<style>
+    body{
+        font-size: 24px;
+    }
+    .active{
+        color:red;
+    }
+</style>
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+ 
+ 
+</head>
+ 
+<body> 
+<div id="myApp">
+    <h1>事件处理器</h1>
+        <input id="txtName" v-on:keyup='txtkeyup($event)'>
+        <button id="btnOK" v-on:click="btnClick($event)">OK</button>
+        
+    
+</div>
+ <script> 
+    var myApp =new Vue({
+        el:'#myApp',
+        data:{},
+        methods: {
+            txtKeyup:function(event){
+                this.debuglog(event);
+            },
+            btnClick:function(event){
+                this.debuglog(event);
+            },
+            debuglog:function(event){
+                console.log(
+                    event.srcElement.tagName,
+                    event.srcElement.id,
+                    event.srcElement.innerHTML,
+                    event.key?event.key:''
+                )
+            }
+        },
+        
+    });
+ 
+ </script>
+</body> 
+</html>
+ 
+ 
