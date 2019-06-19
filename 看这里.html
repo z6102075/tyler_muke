@@ -1,292 +1,329 @@
 <!DOCTYPE html>
-<html  style="height:100%" >
-<head> 
-<meta charset="utf-8"> 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link media="(min-width:1200px)" rel="stylesheet" href="dingbu1.css">
-<link media="(max-width:1200px)" rel="stylesheet" href="dingbu2.css">
-<link media="(min-width:1200px)" rel="stylesheet" href="zhongbu1.css">
-<link media="(max-width:1200px)" rel="stylesheet" href="zhongbu2.css">
-<link media="(min-width:1200px)" rel="stylesheet" href="dibu1.css">
-<link media="(max-width:1200px)" rel="stylesheet" href="dibu2.css">
-<link rel="stylesheet" href="mobile.css">
-<title>                </title> 
-<style> 
-*{
-    margin: 0 auto;
-     
-}
-body{
-    background-color: rgb(34,46,66);
-}
-#outer{
-     /*
+<html style="height:100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link media="(min-width:1200px)" rel="stylesheet" href="dingbu1.css">
+    <link media="(max-width:1200px)" rel="stylesheet" href="dingbu2.css">
+    <link media="(min-width:1200px)" rel="stylesheet" href="zhongbu1.css">
+    <link media="(max-width:1200px)" rel="stylesheet" href="zhongbu2.css">
+    <link media="(min-width:1200px)" rel="stylesheet" href="dibu1.css">
+    <link media="(max-width:1200px)" rel="stylesheet" href="dibu2.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title> </title>
+    <style>
+        * {
+            margin: 0 auto;
+
+        }
+
+        body {
+            background-color: rgb(34, 46, 66);
+        }
+
+        #outer {
+            /*
      设置宽和高
      */
-    width:920px;
-    height: 500px;
-/* 居中 */
-margin: 50px auto;
-/*设置背景颜色*/
-background-color: rgb(70, 139, 156);
-/*设置padding*/
-padding :10px 0;
-/*开启相对定位*/
-position: relative;
-/*裁剪溢出的内容*/
-overflow: hidden;
- }
- /*设置imgList*/
- #imgList{
-         /*去除项目符号*/
-     list-style: none;
-     /*设置ul的宽度，不然他是无法把li的块元素按照横着的元素摆放*/
-    /* width: 5000px; */
-    /* 开启绝对定位 */
-    position: absolute;
-    /*设置偏移量
+            width: 920px;
+            height: 500px;
+            /* 居中 */
+            margin: 50px auto;
+            /*设置背景颜色*/
+            background-color: rgb(70, 139, 156);
+            /*设置padding*/
+            padding: 10px 0;
+            /*开启相对定位*/
+            position: relative;
+            /*裁剪溢出的内容*/
+            overflow: hidden;
+        }
+
+        /*设置imgList*/
+        #imgList {
+            /*去除项目符号*/
+            list-style: none;
+            /*设置ul的宽度，不然他是无法把li的块元素按照横着的元素摆放*/
+            /* width: 5000px; */
+            /* 开启绝对定位 */
+            position: absolute;
+            /*设置偏移量
     每向左移动920px，就会显示到下一张图片*/
-    left:0px;
- }
- /*设置图片中的li*/
- #imgList li{
-     /*设置浮动*/
-     float: left;
-     /*设置左右外边距*/
-     margin: 0 10px;
- }
- /* 设置导航按钮 */
- #navDiv{
-     /* 开启绝对定位 */
-     position: absolute;
-     /* 设置位置 */
-     bottom: 20px;
-     /* 设置left值 
+            left: 0px;
+        }
+
+        /*设置图片中的li*/
+        #imgList li {
+            /*设置浮动*/
+            float: left;
+            /*设置左右外边距*/
+            margin: 0 10px;
+        }
+
+        /* 设置导航按钮 */
+        #navDiv {
+            /* 开启绝对定位 */
+            position: absolute;
+            /* 设置位置 */
+            bottom: 20px;
+            /* 设置left值 
      outer 宽度 920
      navDiv 宽度 35*5=175
                 920-175=745/2=372.5*/
-    /* left: 372.5px; */
- }
- #navDiv a{
-     /* 设置超链接浮动 */
-     float: left;
-     /* 设置超链接的宽和高 */
-    width: 25px;
-    height: 25px;
-    /* 设置背景颜色 */
-    background-color: rgb(164, 202, 247);
-    /* 设置左右外边距 */
-    margin: 0 5px;
-    /* 设置透明 */
-    opacity: 0.5;
-    /* 兼容IE8透明 */
-    filter:alpha(opacity=50);
- }
- /* 设置鼠标移入的效果 */
- #navDiv a:hover{
-     background-color: rgba(153, 151, 151, 0.767);
- }
-</style>
-<link rel="stylesheet" type="text/css" href="caidan.css" >
+            /* left: 372.5px; */
+        }
 
-<script>
-    
-        window.onload=function(){
+        #navDiv a {
+            /* 设置超链接浮动 */
+            float: left;
+            /* 设置超链接的宽和高 */
+            width: 25px;
+            height: 25px;
+            /* 设置背景颜色 */
+            background-color: rgb(164, 202, 247);
+            /* 设置左右外边距 */
+            margin: 0 5px;
+            /* 设置透明 */
+            opacity: 0.5;
+            /* 兼容IE8透明 */
+            filter: alpha(opacity=50);
+        }
+
+        /* 设置鼠标移入的效果 */
+        #navDiv a:hover {
+            background-color: rgba(153, 151, 151, 0.767);
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="caidan.css">
+
+    <script>
+
+        window.onload = function () {
             /*
     点击按钮以后，修改 大小
     
     */
-    var yqlj = document.getElementById("yqlj");
-    var zhankai =  document.getElementById("zhankai");
-   
-    var count=0;
-    zhankai.onclick = function(){
-        if(count==0){
-        yqlj.className = "yqlj fadeout";
-          zhankai.innerHTML="∧";
-           
-           count++;//++了之后 他就不等于0 然后响应了函数之后重新返回上面 onclick 运算 然后 计算到下面的else语句重新等于0
-}else{
-     
-    yqlj.className = "yqlj fadein";
- 
-         zhankai.innerHTML="∨";
-          
-          count=0;
-}
+            var yqlj = document.getElementById("yqlj");
+            var zhankai = document.getElementById("zhankai");
 
-}
+            var count = 0;
+            zhankai.onclick = function () {
+                if (count == 0) {
+                    yqlj.className = "yqlj fadeout";
+                    zhankai.innerHTML = "∧";
 
-    }
-</script>
+                    count++;//++了之后 他就不等于0 然后响应了函数之后重新返回上面 onclick 运算 然后 计算到下面的else语句重新等于0
+                } else {
+
+                    yqlj.className = "yqlj fadein";
+
+                    zhankai.innerHTML = "∨";
+
+                    count = 0;
+                }
+
+            }
+
+        }
+    </script>
 
 </head>
- 
-<body style="height:100%"> 
- 
 
- 
-     <div class="dingbu">
+<body style="height:100%">
+
+
+
+    <div class="dingbu">
         <div class="mk1">
-                <a class="logo" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img src="src-1/1.png"  alt="logo" /></a>
+            <a class="logo" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img src="src-1/1.png"
+                    alt="logo" /></a>
         </div>
-        <div class="mk2">      
-              <a href="">  <img class="dingbu2" src="src-1/Icons White/Notifications Icon Copy 24.svg"style="width:20px;height:20px;"/>
-        </a></div>
-
- 
- 
-
- 
-<div class="mk9">
-    <div class="mk10" >
-
-        </div>
-        <div class="mk10 mk16" >
-            <ul class="nav">
-                <li><a id="yiji" href="">Username ▼</a>
-                    <ul class="list">
-                        <li><a href="" class="out">Personal Center</a></li>
-                        <li><a href="" class="out">Help</a></li>
-                        <li><a href="" class="out">Settings</a></li>
-                        <li><a href="" class="out">Sign out</a></li>
-                    </ul>
-                </li>
-        
-        </ul>
-    </div>
-    <div class="mk10 mk15" >
-        <img class="dingbu6" src="src-1/Icons White/Notifications Icon.svg" style="width:20px;height:20px;">
-    </div>
-    <div class="mk10 mk14" >
-        <a href=""> <img class="dingbu5" src="src-1/Icons White/Notifications Icon Copy 22.svg" style="width:20px;height:20px;"></a>
-    </div>
-    <div class="mk10 mk11" >
-        <a href=""> <img class="dingbu4" src="src-1/Icons White/Notifications Icon Copy 23.svg" style="width:20px;height:20px;">
-        </a>
-    </div>
-    <div class="mk10 mk12" >
-        <a href=""><img class="tongji" src="src-1/2.png" style="width:200px;height:20px;" alt="统计">
-        </a> </div>
-        <div class="mk10 mk13" >
-            <a href=""><img class="dingbu3" src="src-1/Icons White/Notifications Icon Copy 26.svg" style="width:20px;height:20px;">
+        <div class="mk2">
+            <a href=""> <img class="dingbu2" src="src-1/Icons White/Notifications Icon Copy 24.svg"
+                    style="width:20px;height:20px;" />
             </a></div>
 
 
 
 
+
+        <div class="mk9">
+            <div class="mk10">
+
             </div>
-        <div class="clear"></div> 
-     </div>
+            <div class="mk10 mk16">
+                <ul class="nav">
+                    <li><a id="yiji" href="">Username ▼</a>
+                        <ul class="list">
+                            <li><a href="" class="out">Personal Center</a></li>
+                            <li><a href="" class="out">Help</a></li>
+                            <li><a href="" class="out">Settings</a></li>
+                            <li><a href="" class="out">Sign out</a></li>
+                        </ul>
+                    </li>
 
- 
-<div class="zhongbu">
- <div class="zbzb">  <a class="touxiang1" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img src="src-1/3.png"  alt="logo" />
+                </ul>
+            </div>
+            <div class="mk10 mk15">
+                <img class="dingbu6" src="src-1/Icons White/Notifications Icon.svg" style="width:20px;height:20px;">
+            </div>
+            <div class="mk10 mk14">
+                <a href=""> <img class="dingbu5" src="src-1/Icons White/Notifications Icon Copy 22.svg"
+                        style="width:20px;height:20px;"></a>
+            </div>
+            <div class="mk10 mk11">
+                <a href=""> <img class="dingbu4" src="src-1/Icons White/Notifications Icon Copy 23.svg"
+                        style="width:20px;height:20px;">
+                </a>
+            </div>
+            <div class="mk10 mk12">
+                <a href=""><img class="tongji" src="src-1/2.png" style="width:200px;height:20px;" alt="统计">
+                </a> </div>
+            <div class="mk10 mk13">
+                <a href=""><img class="dingbu3" src="src-1/Icons White/Notifications Icon Copy 26.svg"
+                        style="width:20px;height:20px;">
+                </a></div>
 
-         </a>
-             <div class="mk11-1" >
-            <ul class="nav">
-                <li><a id="yiji" href="">Username ▼</a>
-                    <ul class="list">
-                        <li><a href="" class="out">Personal Center</a></li>
-                        <li><a href="" class="out">Help</a></li>
-                        <li><a href="" class="out">Settings</a></li>
-                        <li><a href="" class="out">Sign out</a></li>
-                    </ul>
-                </li>
-        
-            </ul>
-            
+
+
+
         </div>
-        <div class="xinxi">9898 Trent Bypass Suite 541</div>
-        
-<div class="sss">
-    <li style="background-color: rgb(32, 41, 60);" ><a href=""  >Overview</a></li>
-    <li><a href=""  >Devices</a></li>
-    <li><a href=""  >Analytics</a></li>
-    <li><a href="" >Rules</a></li>
-    <li><a href=""   >Gallery</a></li>
-    <li><a href=""   >History</a></li>
-    <li><a href=""  >Settings</a></li>
-</div>
+        <div class="clear"></div>
     </div>
-    <div class="zbyb">
- <div class="spkj">   
- <div class="OV"><p>Overview</p></div> 
- <div class="shiping">
-        <p>  &nbsp;&nbsp;&nbsp;Camera</p>
-         <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-            <video src="7221022-1-16.mp4" autoplay="autoplay" controls="controls" class="sp">
-                如果无法显示,说明您的浏览器不支持 video 插件。
-            </video>
+
+
+    <div class="zhongbu">
+        <div class="zbzb"> <a class="touxiang1" href="file:///C:/Users/Administrator/Desktop/%231.0 Overview.mhtml"><img
+                    src="src-1/3.png" alt="logo" />
+
+            </a>
+            <div class="mk11-1">
+                <ul class="nav">
+                    <li><a id="yiji" href="">Username ▼</a>
+                        <ul class="list">
+                            <li><a href="" class="out">Personal Center</a></li>
+                            <li><a href="" class="out">Help</a></li>
+                            <li><a href="" class="out">Settings</a></li>
+                            <li><a href="" class="out">Sign out</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="xinxi">9898 Trent Bypass Suite 541</div>
+
+            <div class="sss">
+                <li style="background-color: rgb(32, 41, 60);"><a href="">Overview</a></li>
+                <li><a href="">Devices</a></li>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">Rules</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Settings</a></li>
+            </div>
         </div>
- </div>
- <div class="you1">
-    <div class="you2">
-        <a href="">
-                 <img class="chilun" src="src-1/Icons White/Notifications Icon Copy 9.svg" style="width:20px;height:20px;">
-         </a> <img class="sandian1" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
- 
- </div><div class="wrap"><section class="box green-box"> <div class="zzx">
-        <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-     
-    </div></section></div> 
+        <div class="zbyb">
+            <div class="spkj">
+                <div class="OV">
+                    <p>Overview</p>
+                </div>
+                <div class="shiping">
+                    <p> &nbsp;&nbsp;&nbsp;Camera</p>
+                    <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                        style="width:20px;height:20px;" />
+                    <video src="7221022-1-16.mp4" autoplay="autoplay" controls="controls" class="sp">
+                        如果无法显示,说明您的浏览器不支持 video 插件。
+                    </video>555555555555555
+                </div>
+            </div>
+            <div class="you1">
+                <div class="you2">
+                    <a href="">
+                        <img class="chilun" src="src-1/Icons White/Notifications Icon Copy 9.svg"
+                            style="width:20px;height:20px;">
+                    </a> <img class="sandian1" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                        style="width:20px;height:20px;" />
 
-    <div class="wrap two"><section class="box green-box"> <div class="zzx">
-            <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-        </div></section></div> 
- </div>
- <div class="zzx2">
-    <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
- 
-</div>
+                </div>
+                <div class="wrap">
+                    <section class="box green-box">
+                        <div class="zzx">
+                            <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                                style="width:20px;height:20px;" />
+
+                        </div>
+                    </section>
+                </div>
+
+                <div class="wrap two">
+                    <section class="box green-box">
+                        <div class="zzx">
+                            <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                                style="width:20px;height:20px;" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="zzx2">
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                    style="width:20px;height:20px;" />
+
+            </div>
+        </div>
+        <a href="javascript:;" id="zhankai">∨</a>
     </div>
-<a href="javascript:;"  id="zhankai">∨</a> 
-</div>
 
-           <dd id="yqlj" >
-               <div class="dibu">
+    <dd id="yqlj">
+        <div class="dibu">
             <div class="zzx3">
-                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-             
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                    style="width:20px;height:20px;" />
+
             </div>
             <div class="zzx3">
-                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-             
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                    style="width:20px;height:20px;" />
+
             </div>
             <div class="zzx3">
-                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-             
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                    style="width:20px;height:20px;" />
+
             </div>
             <div class="zzx3">
-                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-             
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                    style="width:20px;height:20px;" />
+
             </div>
             <div class="zzx3">
-                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-             
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                    style="width:20px;height:20px;" />
+
             </div>
             <div class="zzx3">
-                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"style="width:20px;height:20px;"/>
-             
+                <img class="sandian" src="src-1/Icons White/Notifications Icon Copy 25.svg"
+                    style="width:20px;height:20px;" />
+
             </div>
- 
+
     </dd>
     <div class="dibu1">
-           <div class="llb">
-                <iframe class="lbt" src="lunbotu.html" frameborder="0"   height="100%" name="main" scrolling="auto"></iframe>
- 
-           </div>   </div>
-                    
-          
-    
-       
-  
+        <div class="llb">
+            <iframe class="lbt" src="lunbotu.html" frameborder="0" height="100%" name="main" scrolling="auto"></iframe>
 
- 
-       
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 </body>
+
 </html>
- 
- 

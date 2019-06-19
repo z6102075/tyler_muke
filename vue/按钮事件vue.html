@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+<style>
+ 
+</style>
+
+ <script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+ 
+</head>
+ 
+<body> 
+ <div id="myApp">
+    <p>您喜欢的游戏是：{{mygame}}</p>
+    <button v-on:click="btnClick('我的世界')">我的世界</button>
+    <button v-on:click="btnClick('勇者斗恶龙')">勇者斗恶龙</button>
+    <button v-on:click="btnClick('塞尔达传说')">塞尔达传说</button>
+    <button v-on:click="btnClick('魔界战记5')">魔界战记5</button>
+ </div>
+
+ <script>
+  var myApp = new Vue({
+      el:'#myApp',
+      data:{
+          mygame:'超级马里奥'
+      },
+      methods:{
+          btnClick:function(pname) {
+              this.mygame =pname;
+              
+          },
+      },
+  });
+ </script>
+</body> 
+</html>
+ 
+ 
