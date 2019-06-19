@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+ 
+<style>
+    body{
+        font-size: 24px;
+    }
+    .active{
+        color:red;
+    }
+</style>
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+ 
+ 
+</head>
+ 
+<body> 
+<div id="myApp">
+    <div v-show='result'>任天堂新一代主机Switch</div>
+    <button @click='btnClick'>显示按钮</button>
+</div>
+ <script> 
+    var myApp =new Vue({
+        el:'#myApp',
+        data:{
+            result:true
+        }, 
+        methods: {
+            btnClick:function(){
+                this.result = !this.result;
+            },
+        },
+    });
+ 
+ </script>
+</body> 
+</html>
+ 
+ 

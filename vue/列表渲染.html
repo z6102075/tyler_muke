@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+ 
+<style>
+    body{
+        font-size: 24px;
+    }
+    .active{
+        color:red;
+    }
+</style>
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+ 
+ 
+</head>
+ 
+<body> 
+<div id="myApp">
+    <ul>
+        <li v-for='(ABC,index) in games'>({{index+1}})
+            {{ABC.title}} /售价:{{ABC.price}}元
+        </li>
+    </ul>
+</div>
+ <script> 
+    var myApp =new Vue({
+        el:'#myApp',
+        data:{
+            games:[
+                {title:'勇者斗恶龙',price:500},
+                {title:'酷跑卡丁车',price:400},
+                {title:'马里奥世界',price:550},
+            ]
+        }, 
+    });
+ 
+ </script>
+</body> 
+</html>
+ 
+ 
