@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+<style>
+ 
+</style>
+
+ <script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+ 
+</head>
+ 
+<body> 
+ <div id="myApp">
+    <p>{{message}}</p>
+    <p>{{message |toupper }}</p>
+    <hr>
+    <p>现在的vue.js学习进度是{{num}}({{num | topercentage}}).</p>
+ </div>
+
+ <script>
+     var myApp = new Vue({
+         el:'#myApp',
+         data:{
+             message:'hello vue.js world.',
+             num:0.3
+         },
+         filters:{
+             toupper:function(value){
+                 return value.toUpperCase();
+             },
+             topercentage:function(value){
+                 return value * 100 +'%;'
+             }
+         }
+     })
+ </script>
+</body> 
+</html>
+ 
+ 
