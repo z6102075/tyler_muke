@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+ 
+<style>
+    body{
+        font-size: 24px;
+    }
+    .active{
+        color:red;
+    }
+</style>
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+ 
+ 
+</head>
+ 
+<body> 
+<div id="myApp">
+    <h3>你最喜欢的NBA球星是：</h3>  
+    <select v-model="likedNBAStar" style="width:210px">
+    <option>科比</option>
+    <option>詹姆斯</option>
+    <option>哈登</option>
+    <option>库里</option>
+    <option>杜兰特</option>
+    
+    </select>
+    <h3>我的全明星</h3>
+    
+    <select v-model="likedNBAStars" multiple style="width:210px">
+        <option>阿德托昆博</option>
+        <option>怀德赛德</option>
+        <option>阿尔德里奇</option>
+        <option>戴维斯</option>
+        <option>格里芬</option>
+        <option>阿德托昆博1</option>
+        <option>怀德赛德1</option>
+        <option>阿尔德里奇</option>
+        <option>戴维斯</option>
+        <option>格里芬</option>
+        <option>阿德托昆博2</option>
+        <option>怀德赛德2</option>
+        <option>阿尔德里奇</option>
+        <option>戴维斯</option>
+        <option>格里芬</option>
+        
+        </select>
+        <h3>选择结果</h3>
+        <p>我最最喜欢:{{likedNBAStar}}</p>
+        
+        <p>我的全明星:{{likedNBAStars}}</p>
+</div>
+ <script> 
+    var myApp =new Vue({
+        el:'#myApp',
+        data:{
+           likedNBAStar:null,
+           likedNBAStars:[],
+        }, 
+        methods: {
+ 
+        },
+    });
+// v -model为表单控件元素创建双向数据绑定，将JS的值快速设定到控件上，然后将用户输入的内容快速设置回JS变量
+ </script>
+</body> 
+</html>
+ 
+ 

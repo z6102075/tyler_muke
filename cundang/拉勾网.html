@@ -700,7 +700,7 @@ position:relative;
  
  window.onload= function(){
     /*
-    点击按钮以后，修改 大小
+    点击按钮以后，修改box1的大小
     
     */
     var yqlj = document.getElementById("yqlj");
@@ -710,7 +710,7 @@ position:relative;
         if(count==0){
             yqlj.style.height="110px";
            zhankai.innerHTML="收起";
-           count++;//++了之后 他就不等于0 然后响应了函数之后重新返回上面 onclick 运算 然后 计算到下面的else语句重新等于0
+           count++;
 }else{
          yqlj.style.height="20px";
          zhankai.innerHTML="展开";
