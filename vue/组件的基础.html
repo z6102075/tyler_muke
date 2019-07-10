@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+ 
+<style>
+    body{
+        font-size: 24px;
+    }
+    .active{
+        color:red;
+    }
+</style>
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+ 
+ 
+</head>
+ 
+<body> 
+<div id="myApp"> 
+    <today-weather></today-weather>
+</div>
+ <script> 
+    Vue.component('today-weather',{ //Vue  前面V必须大写 而且这一段相当于注册一个组件，必须写在前面
+        template:'<div>今天下雨，出不去啦，干什么呢？看Youtube吧！</div>'
+    });
+    var myApp =new Vue({
+        el:'#myApp',
+        data:{
+           
+        }, 
+        methods: {
+ 
+        },
+    });
+// v -model为表单控件元素创建双向数据绑定，将JS的值快速设定到控件上，然后将用户输入的内容快速设置回JS变量
+ </script>
+</body> 
+</html>
+ 
+ 
